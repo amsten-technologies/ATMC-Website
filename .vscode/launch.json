@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open elements.html",
-            "file": "c:\\Users\\fayik\\Downloads\\medicalcenter-master\\elements.html"
+            "file": "c:\\Users\\fayik\\Downloads\\ATMC Website\\index.html"
         }
     ]
 }

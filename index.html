@@ -12,6 +12,7 @@
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/gijgo.css">
@@ -25,18 +26,23 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
+ <!-- Preloader Start -->
+<div id="preloader-active" style="position:fixed;width:100%;height:100%;top:0;left:0;z-index:999999;background:#fff;display:flex;align-items:center;justify-content:center;">
+    
+    <div class="preloader-inner" style="text-align:center;">
+        
+        <!-- REMOVE circle -->
+        <!-- <div class="preloader-circle"></div> -->
+
+        <div class="preloader-img">
+            <img src="assets/img/logo/loader.jpg" alt="logo"
+                 style="width:180px; height:auto; display:block; margin:auto;">
         </div>
+
     </div>
-    <!-- Preloader Start -->
+
+</div>
+<!-- Preloader End -->
 <header>
     <!--? Header Start -->
     <div class="header-area">
@@ -46,7 +52,7 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="AMTC"></a>
+                            <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="AMTC"></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
@@ -55,24 +61,16 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="doctor.html">Doctors</a></li>
-                                        <li><a href="department.html">Department</a></li>
-                                        <li><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog_details.html">Blog Details</a></li>
-                                                <li><a href="index.html">Element</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li><a href="about.html">ABOUT</a></li>
+                                        <li><a href="doctor.html">DOCTORS</a></li>
+                                        <li><a href="biosafe.html">BIOSAFETY</a></li>
+                                        <li><a href="blog.html">BLOG</a></li>
+                                        <li><a href="contact.html">CONTACT</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn"></a>
-                            </div>
+
                         </div>
                     </div>   
                     <!-- Mobile Menu -->
@@ -96,6 +94,20 @@
                     <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                         <div class="hero__caption">
                             <span>AL-TAWAKKUL MEDICAL CENTER</span>
+
+<h2 style="
+    font-size:42px;
+    font-weight:900;
+    color : teal;    
+    margin-top:15px;
+    line-height:1.2;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    border-left:5px solid teal;  
+    padding-left:15px;
+">
+    THE FIRST PRIVATE HOSPITAL OF  GANDERBAL DISTRICT
+</h2>
                             <h1 class="cd-headline letters scale">
                                 EXCELLENCE IN PATIENT CARE
                                 <strong class="cd-words-wrapper">
@@ -107,9 +119,7 @@
                             <p data-animation="fadeInLeft" data-delay="0.1s">
                                 Manage patient admission, inpatient care, billing, surgical preparation, and discharge seamlessly.
                             </p>
-                            <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
-                                Book Appointment <i class="ti-arrow-right"></i>
-                            </a>
+                           <a href="#" class="dep-btn">Book Appointment<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -134,9 +144,7 @@
                             <p data-animation="fadeInRight" data-delay="0.1s">
                                 We at ATMC are committed to your good health, faster recovery, and holistic wellbeing.
                             </p>
-                            <a href="#" class="btn hero-btn" data-animation="fadeInRight" data-delay="0.5s">
-                                Book Appointment <i class="ti-arrow-right"></i>
-                            </a>
+                            <a href="#" class="dep-btn">Book Appointment<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -171,16 +179,21 @@
                             <span>About ATMC</span>
                             <h2>Welcome to ATMC</h2>
                         </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
-                        </div>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Appointment <i class="ti-arrow-right"></i></a>
-                        </div>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Emergency 1 <i class="ti-arrow-right"></i></a>
-                        </div>
+                       <p>
+  <p>
+    ATMC was founded with a vision to redefine healthcare in the Valley by delivering world-class medical services with uncompromising quality. 
+    At the core of our approach is a deep commitment to patient care, where compassion meets clinical excellence.
+</p>
+<p>
+    Equipped with state-of-the-art technology and supported by a team of highly skilled and experienced healthcare professionals, 
+    we provide personalized treatment designed to ensure safety, comfort, and faster recuperation for every patient.
+</p>
+<p>
+    From admission to discharge, we ensure seamless and hassle free experience for every patient, 
+    focusing on safety, efficiency, and overall wellbeing.
+</p>
+                        
+                      
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -204,54 +217,116 @@
             <!-- Section Tittle -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-tittle text-center mb-100">
-                        <span>Our Departments</span>
-                        <h2>Our Medical Services</h2>
-                    </div>
+                 <div style="display:flex; justify-content:center;">
+    <div style="width:100%; max-width:700px;">
+
+        <div style="text-align:center; margin-bottom:70px;">
+
+            <!-- DASH + TEXT -->
+            <span style="
+                display:inline-block;
+                position:relative;
+                padding-left:50px;
+                font-size:15px;
+                font-weight:800;
+                color:#3b5bfd;
+            ">
+                <span style="
+                    position:absolute;
+                    left:0;
+                    top:50%;
+                    width:40px;
+                    height:2px;
+                    background:#3b5bfd;
+                    transform:translateY(-50%);
+                "></span>
+                ATMC DEPARTMENTS
+            </span>
+
+            <!-- MAIN HEADING -->
+            <h2 style="
+                font-size:36px;
+                font-weight:800;
+                margin-top:15px;
+                color:#0b1c39;
+            ">
+                ATMC Medical Services
+            </h2>
+
+        </div>
+
+    </div>
+</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="depart_ment_tab mb-30">
-                        <!-- Tabs Buttons -->
-                        <ul class="nav" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-                                    <i class="flaticon-teeth"></i>
-                                    <h4>Dentistry</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                                    <i class="flaticon-cardiovascular"></i>
-                                    <h4>Cardiology</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-ear"></i>
-                                    <h4>ENT Specialists</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-bone"></i>
-                                    <h4>Astrology</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="Neuroanatomy-tab" data-toggle="tab" href="#Neuroanatomy" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-lung"></i>
-                                    <h4>Neuroanatomy</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="Blood-tab" data-toggle="tab" href="#Blood" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-cell"></i>
-                                    <h4>Blood Screening</h4>
-                                </a>
-                            </li>
-                        </ul>
+                      <!-- Tabs Buttons -->
+<ul class="nav" id="myTab" role="tablist">
+
+    <!-- Cardiology (KEEP HEART ICON + REMOVE GREEN STYLE ONLY) -->
+    <li class="nav-item">
+        <a class="nav-link" id="home-tab"
+           data-toggle="tab" href=""
+           role="tab" aria-controls="home" aria-selected="true">
+            <i class="flaticon-cardiovascular"></i>
+            <h4>Cardiology</h4>
+        </a>
+    </li>
+
+
+    <!-- ENT -->
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab"
+           data-toggle="tab" href=""
+           role="tab" aria-controls="contact" aria-selected="false">
+            <i class="flaticon-ear"></i>
+            <h4>ENT</h4>
+        </a>
+    </li>
+
+    <!-- Orthopedics -->
+    <li class="nav-item">
+        <a class="nav-link" id="Astrology-tab"
+           data-toggle="tab" href=""
+           role="tab" aria-controls="contact" aria-selected="false">
+            <i class="flaticon-bone"></i>
+            <h4>Orthopedics</h4>
+        </a>
+    </li>
+
+    <!-- Pulmonology -->
+    <li class="nav-item">
+        <a class="nav-link" id="Neuroanatomy-tab"
+           data-toggle="tab" href=""
+           role="tab" aria-controls="contact" aria-selected="false">
+            <i class="flaticon-lung"></i>
+            <h4>Pulmonology</h4>
+        </a>
+    </li>
+
+<!-- Neurology -->
+<li class="nav-item">
+    <a class="nav-link" id="neurology-tab"
+       data-toggle="tab" href="#neurology"
+       role="tab" aria-controls="neurology" aria-selected="false">
+        <i class="fa-solid fa-brain"></i>
+        <h4>Neurology</h4>
+    </a>
+</li>
+
+    <!-- Pathology -->
+    <li class="nav-item">
+        <a class="nav-link" id="Blood-tab"
+           data-toggle="tab" href=""
+           role="tab" aria-controls="contact" aria-selected="false">
+            <i class="flaticon-cell"></i>
+            <h4>Pathology</h4>
+        </a>
+    </li>
+
+</ul>
                     </div>
                 </div>
             </div>
@@ -261,11 +336,16 @@
                         <!-- single_content  -->
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
-                                </div>
+                               <div class="dept_info">
+    <h3>Comprehensive Healthcare <br> You Can Trust</h3>
+    <p>
+        At ATMC, we are committed to delivering high-quality healthcare services with compassion and expertise. 
+        Our team of experienced doctors and medical staff provide personalized care across multiple specialties, 
+        ensuring accurate diagnosis, effective treatment, and patient well-being. 
+        We prioritize safety, advanced medical practices, and a comfortable healing environment for every patient.
+    </p>
+     <a href="#" class="dep-btn">Book Appointment<i class="ti-arrow-right"></i></a>
+</div>
                             </div>
                             <div class="col-lg-5">
                                 <div class="dept_thumb">
@@ -370,64 +450,147 @@
 
         </div>
     </div>
-    <!-- depertment area end  -->
-     <!--? Gallery Area Start -->
-     <div class="gallery-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-100">
-                        <span>Our Gellary</span>
-                        <h2>Our Medical Camp</h2>
-                    </div>
+    <!-- department area end  -->
+    <!-- Gallery Area Start -->
+<div style="padding:80px 20px;">
+    <div style="max-width:1300px; margin:auto;">
+
+        <!-- Section Title -->
+        <div style="display:flex; justify-content:center;">
+            <div style="width:100%; max-width:700px;">
+
+                <div style="text-align:center; margin-bottom:70px;">
+
+                    <!-- DASH + TEXT -->
+                    <span style="
+                        display:inline-block;
+                        position:relative;
+                        padding-left:50px;
+                        font-size:15px;
+                        font-weight:800;
+                        color:#3b5bfd;
+                    ">
+                        <span style="
+                            position:absolute;
+                            left:0;
+                            top:50%;
+                            width:40px;
+                            height:2px;
+                            background:#3b5bfd;
+                            transform:translateY(-50%);
+                        "></span>
+                        ATMC GALLERY
+                    </span>
+
+                    <!-- MAIN HEADING -->
+                    <h2 style="
+                        font-size:36px;
+                        font-weight:800;
+                        margin-top:15px;
+                        color:#0b1c39;
+                    ">
+                        Our Work at ATMC
+                    </h2>
+
                 </div>
-            </div>
-            <div class="row">
-                <!-- Left -->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery1.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery3.png);"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Right -->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery5.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery6.png);"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
+
+        <!-- Gallery Layout -->
+        <div class="gallery-main" style="display:flex; gap:25px;">
+
+            <!-- LEFT BIG IMAGE -->
+            <div class="left-col" style="flex:1;">
+                <div style="
+                    height:520px;
+                    width:100%;
+                    background-image:url('assets/img/gallery/gallery1.png');
+                    background-size:cover;
+                    background-position:center;
+                "></div>
+            </div>
+
+            <!-- RIGHT 4 IMAGES -->
+            <div class="right-col" style="flex:1;">
+                <div style="display:flex; flex-wrap:wrap; gap:25px;">
+
+                    <div class="small-box" style="width:calc(50% - 12.5px);">
+                        <div style="
+                            height:245px;
+                            background-image:url('assets/img/gallery/gallery2.png');
+                            background-size:cover;
+                            background-position:center;
+                        "></div>
+                    </div>
+
+                    <div class="small-box" style="width:calc(50% - 12.5px);">
+                        <div style="
+                            height:245px;
+                            background-image:url('assets/img/gallery/gallery3.png');
+                            background-size:cover;
+                            background-position:center;
+                        "></div>
+                    </div>
+
+                    <div class="small-box" style="width:calc(50% - 12.5px);">
+                        <div style="
+                            height:245px;
+                            background-image:url('assets/img/gallery/gallery4.png');
+                            background-size:cover;
+                            background-position:center;
+                        "></div>
+                    </div>
+
+                    <div class="small-box" style="width:calc(50% - 12.5px);">
+                        <div style="
+                            height:245px;
+                            background-image:url('assets/img/gallery/gallery5.png');
+                            background-size:cover;
+                            background-position:center;
+                        "></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    <!-- Gallery Area End -->
+</div>
+
+<!-- Mobile Responsive -->
+<style>
+@media (max-width:768px){
+
+    .gallery-main{
+        flex-direction:column !important;
+    }
+
+    .right-col div{
+        flex-direction:column !important;
+    }
+
+    .small-box{
+        width:100% !important;
+    }
+
+    h2{
+        font-size:24px !important;
+    }
+
+    /* Stack all images */
+    .left-col div{
+        height:250px !important;
+        margin-bottom:20px;
+    }
+
+    .small-box div{
+        height:180px !important;
+        margin-bottom:20px;
+    }
+}
+</style>
     <!--? All startups Start -->
     <div class="all-starups-area testimonial-area fix">
         <!-- left Contents -->
@@ -439,19 +602,23 @@
                     <!-- Testimonial Content -->
                     <div class="testimonial-caption ">
                         <div class="testimonial-top-cap">
-                            <img src="assets/img/gallery/testimonial.png" alt="">
-                            <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for yout hard.”</p>
-                        </div>
+    <p>
+        “I commend ATMC for its unwavering commitment to delivering quality healthcare services with compassion and excellence. 
+         Their dedication to patient well-being and modern medical practices is truly commendable.”
+    </p>
+</div>
                         <!-- founder -->
                         <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                            <div class="founder-img">
-                                <img src="assets/img/gallery/Homepage_testi.png" alt="">
-                            </div>
-                            <div class="founder-text">
-                                <span>Margaret Lawson</span>
-                                <p>Chif Photographer</p>
-                            </div>
-                        </div>
+    <div class="founder-img">
+        <img src="assets/img/gallery/testimonial.png" 
+             alt=""
+             style="width:60px; height:60px; border-radius:50%; object-fit:cover;">
+    </div>
+    <div class="founder-text">
+        <span>Omar Abdullah</span>
+        <p>Chief Minister, J&K</p>
+    </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -468,8 +635,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <span>Our Doctors</span>
-                        <h2>Our Specialist</h2>
+                        <span>ATMC Doctors</span>
+                        <h2>Our Specialists</h2>
                     </div>
                 </div>
             </div>
@@ -481,8 +648,8 @@
                             <img src="assets/img/gallery/team2.png" alt="">
                         </div>
                         <div class="team-caption">
-                            <h3><a href="#">Alvin Maxwell</a></h3>
-                            <span>Creative UI Designer</span>
+                            <h3><a href="#">Khawar Mufti</a></h3>
+                            <span>Director</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -499,8 +666,8 @@
                             <img src="assets/img/gallery/team3.png" alt="">
                         </div>
                         <div class="team-caption">
-                            <h3><a href="#">Maria Smith</a></h3>
-                            <span>Agency Manager</span>
+                            <h3><a href="#">Dr. Gulnar Mufti</a></h3>
+                            <span>Emergency Physician</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -517,8 +684,8 @@
                             <img src="assets/img/gallery/team1.png" alt="">
                         </div>
                         <div class="team-caption">
-                            <h3><a href="#">Angela Doe</a></h3>
-                            <span>Designer</span>
+                            <h3><a href="#">Dr. Arif Kashani</a></h3>
+                            <span>Cardiologist</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -533,72 +700,99 @@
         </div>
     </div>
     <!-- Team End -->
-     <!--? Contact form Start -->
-     <div class="contact-form-main">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-7 col-lg-7">
-                    <div class="form-wrapper">
-                        <!--Section Tittle  -->
-                        <div class="form-tittle">
-                            <div class="row ">
-                                <div class="col-xl-12">
-                                    <div class="section-tittle section-tittle2">
-                                        <span>Appointment Apply Form</span>
-                                        <h2>Appointment Form</h2>
-                                    </div>
+   <!--? Contact form Start -->
+<div id="appointment-form" class="contact-form-main">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-xl-7 col-lg-7">
+                <div class="form-wrapper">
+                    
+                    <!-- Section Title -->
+                    <div class="form-tittle">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="section-tittle section-tittle2">
+                                    <span>Appointment Form</span>
+                                    <h2> ATMC Appointment Form</h2>
                                 </div>
                             </div>
                         </div>
-                        <!--End Section Tittle  -->
-                        <form id="contact-form" action="#" method="POST">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-box user-icon mb-30">
-                                        <input type="text" name="name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-box email-icon mb-30">
-                                        <input type="text" name="email" placeholder="Phone">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-30">
-                                    <div class="select-itms">
-                                        <select name="select" id="select2">
-                                            <option value="">Health Law</option>
-                                            <option value="">saiful islam</option>
-                                            <option value="">Arafath Miya</option>
-                                            <option value="">Shakil Miya</option>
-                                            <option value="">Tamim Sharker</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-box subject-icon mb-30">
-                                        <input type="Email" name="subject" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-box message-icon mb-65">
-                                        <textarea name="message" id="message" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="submit-info">
-                                        <button class="btn" type="submit">Submit Now <i class="ti-arrow-right"></i> </button>
-                                    </div>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="row">
+                            
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-box user-icon mb-30">
+                                    <input type="text" name="name" placeholder="Name" required>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-box email-icon mb-30">
+                                    <input type="text" name="phone" placeholder="Phone" required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 mb-30">
+                                <div class="select-itms">
+                                   <select name="service" id="select2" required>
+    <option value="">Select Department</option>
+
+    <option value="General Medicine">General Medicine</option>
+    <option value="Cardiology">Cardiology (Heart)</option>
+    <option value="Neurology">Neurology (Brain & Nerves)</option>
+    <option value="Orthopedics">Orthopedics (Bones & Joints)</option>
+    <option value="Dermatology">Dermatology (Skin & Hair)</option>
+    <option value="Ophthalmology">Ophthalmology (Eye)</option>
+    <option value="Pediatrics">Pediatrics (Child Care)</option>
+    <option value="Gynecology">Gynecology & Obstetrics</option>
+    <option value="Pulmonology">Pulmonology (Lungs)</option>
+    <option value="Endocrinology">Endocrinology (Hormones)</option>
+    <option value="Physiotherapy">Physiotherapy & Rehabilitation</option>
+</select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-box subject-icon mb-30">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-box message-icon mb-65">
+                                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                                </div>
+
+                                <div class="submit-info">
+                                 <button type="submit" class="dep-btn"
+    style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border: 1px solid #28a745; background-color: transparent; color: #28a745; cursor: pointer; transition: all 0.3s ease;"
+    
+    onmouseover="this.style.backgroundColor='#28a745'; this.style.color='#ffffff'; this.querySelector('i').style.color='#ffffff';"
+    
+    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#28a745'; this.querySelector('i').style.color='#28a745';"
+>
+    Submit Now
+</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
-        <!-- contact left Img-->
-        <div class="from-left d-none d-lg-block">
-            <img src="assets/img/gallery/contact_form.png" alt="">
-        </div>
     </div>
-    <!-- Contact form End -->
+
+    <!-- Left Image -->
+    <div class="from-left d-none d-lg-block">
+        <img src="assets/img/gallery/contact_form.png" alt="">
+    </div>
+</div>
+<!-- Contact form End -->
     <!--? gallery Products Start -->
     <div class="gallery-area fix">
         <div class="container-fluid p-0">
@@ -656,112 +850,159 @@
                 <div class="cl-xl-7 col-lg-8 col-md-10">
                     <!-- Section Tittle -->
                     <div class="section-tittle text-center mb-70">
-                        <span>Oure recent news</span>
-                        <h2>OurNews From Blog</h2>
+                        <span> Recent Updates </span>
+                        <h2>From the World of Medicine</h2>
                     </div> 
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-blogs mb-30">
-                        <div class="blog-img">
-                            <img src="assets/img/gallery/blog1.png" alt="">
-                        </div>
-                        <div class="blogs-cap">
-                            <div class="date-info">
-                                <span>Health</span>
-                                <p>Nov 30, 2020</p>
-                            </div>
-                            <h4><a href="blog_details.html">Amazing Places To Visit In Summer</a></h4>
-                            <a href="blog_details.html" class="read-more1">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-blogs mb-30">
-                        <div class="blog-img">
-                            <img src="assets/img/gallery/blog2.png" alt="">
-                        </div>
-                        <div class="blogs-cap">
-                            <div class="date-info">
-                                <span>Checkup</span>
-                                <p>Nov 30, 2020</p>
-                            </div>
-                            <h4><a href="blog_details.html">Developing Creativithout Losing Visual</a></h4>
-                            <a href="blog_details.html" class="read-more1">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-blogs mb-30">
-                        <div class="blog-img">
-                            <img src="assets/img/gallery/blog3.png" alt="">
-                        </div>
-                        <div class="blogs-cap">
-                            <div class="date-info">
-                                <span>Operation</span>
-                                <p>Nov 30, 2020</p>
-                            </div>
-                            <h4><a href="blog_details.html">Winter Photography Tips from Glenn</a></h4>
-                            <a href="blog_details.html" class="read-more1">Read more</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="single-blogs mb-30">
+            <div class="blog-img">
+                <img src="assets/img/gallery/blog1.png" alt="">
             </div>
+            <div class="blogs-cap">
+                <div class="date-info">
+                    <span>General Health</span>
+                    <p>Apr 06, 2026</p>
+                </div>
+                <h4>
+                    <a href="blog_details.html">Importance of Regular Health Checkups</a>
+                </h4>
+                <a href="blog_details.html" class="read-more1">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="single-blogs mb-30">
+            <div class="blog-img">
+                <img src="assets/img/gallery/blog2.png" alt="">
+            </div>
+            <div class="blogs-cap">
+                <div class="date-info">
+                    <span>Preventive Care</span>
+                    <p>Apr 06, 2026</p>
+                </div>
+                <h4>
+                    <a href="blog_details.html">How to Maintain a Healthy Lifestyle Daily</a>
+                </h4>
+                <a href="blog_details.html" class="read-more1">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="single-blogs mb-30">
+            <div class="blog-img">
+                <img src="assets/img/gallery/blog3.png" alt="">
+            </div>
+            <div class="blogs-cap">
+                <div class="date-info">
+                    <span>Medical Services</span>
+                    <p>Apr 06, 2026</p>
+                </div>
+                <h4>
+                    <a href="blog_details.html">Advanced Treatments Available at ATMC</a>
+                </h4>
+                <a href="blog_details.html" class="read-more1">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
     <!-- Blog End -->
     </main>
-    <footer>
-    <div class="footer-area" style="background-color:#007bff; color:#fff; padding:60px 0;">
+
+<!-- Font Awesome (REQUIRED) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<footer>
+    <div style="background:#fff; color:#000; padding:60px 0; border-top:1px solid rgba(0,0,0,0.08);">
         <div class="container">
             <div class="row justify-content-between align-items-start">
                 
-                <!-- Logo Section -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center text-lg-left">
-                    <div class="footer-logo mb-3">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Hospital Logo" style="max-width:180px;"></a>
+                <!-- LOGO + TAGLINE -->
+                <div class="col-lg-3 col-md-6 text-center text-lg-left">
+
+                    <img src="assets/img/logo/logo.jpg" style="max-width:180px; margin-bottom:15px;">
+
+                    <p style="margin-bottom:30px; font-size:13px; line-height:1.6;">
+                        Excellence in patient care from admission to discharge
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/918527216160"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <p>Excellence in patient care from admission to discharge</p>
                 </div>
 
-                <!-- About Section -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center text-lg-left">
-    <h4>About Us</h4>
-    <p>We at <strong>ATMC</strong> are dedicated to providing best services to every individual.</p>
-    <p>Our mission is to ensure every patient receives personalized care, advanced treatment and  faster recovery.</p>
-</div>
+                <!-- ABOUT -->
+                <div class="col-lg-3 col-md-6 text-center text-lg-left">
+                    <h4 style="font-size:16px; font-weight:600; margin-bottom:10px;">About Us</h4>
 
-                <!-- Contact & Newsletter -->
+                    <p style="font-size:13px; line-height:1.6;">
+                        We at <strong>ATMC</strong> are dedicated to providing best services to every individual.
+                    </p>
+
+                    <p style="font-size:13px; line-height:1.6;">
+                        Our mission is to ensure every patient receives personalized care, advanced treatment and faster recovery.
+                    </p>
+                </div>
+
+                <!-- CONTACT -->
                 <div class="col-lg-4 col-md-12 text-center text-lg-left">
-                    <h4>Contact Us</h4>
-                    <p><strong>Phone:</strong> +91 8527216160</p>
-                    <p><strong>Email:</strong> contact@atmc.com</p>
+                    <h4 style="font-size:16px; font-weight:600; margin-bottom:10px;">Contact Us</h4>
 
-                    <!-- Newsletter Form -->
-                    <form class="newsletter-form d-flex flex-wrap mt-3">
-                        <input type="email" placeholder="Your email address" style="flex:1; padding:10px; border:none; border-radius:4px; margin-right:5px;">
-                        <button type="submit" style="padding:10px 20px; border:none; border-radius:4px; background:#fff; color:#007bff; font-weight:bold; cursor:pointer;">Subscribe</button>
+                    <!-- PHONE -->
+                    <p class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span><strong>Phone:</strong> <a href="tel:+918527216160">+91 8527216160</a></span>
+                    </p>
+
+                    <!-- EMAIL -->
+                    <p class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>Email:</strong> <a href="mailto:contact@atmc.com">contact@atmc.com</a></span>
+                    </p>
+
+          <p class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>
+        <strong>Address:</strong> 
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.207699,74.792504" target="_blank">
+            Malshahi Bagh, Ganderbal, Jammu & Kashmir
+        </a>
+    </span>
+</p>
+                    <!-- NEWSLETTER -->
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
-            <div class="footer-bottom mt-5 pt-3 border-top" style="border-color: rgba(255,255,255,0.3);">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-8 text-center text-md-left mb-2 mb-md-0">
-                        <p>&copy;<script>document.write(new Date().getFullYear());</script> Developed by Amsten Technologies Private Limited ™</p>
-                    </div>
-                    <div class="col-md-4 text-center text-md-right">
-                        <!-- Social Links -->
-                        <div class="footer-social">
-                            <a href="#" style="color:#fff; margin-left:10px; font-size:18px;"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/sai4ull" style="color:#fff; margin-left:10px; font-size:18px;"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" style="color:#fff; margin-left:10px; font-size:18px;"><i class="fas fa-globe"></i></a>
-                            <a href="#" style="color:#fff; margin-left:10px; font-size:18px;"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+               <p style="font-size: 12px; color: #9aa0a6; margin: 0;">
+    Developed by 
+    <a href="https://www.amsten.in" target="_blank" 
+       style="color: #6c757d; text-decoration: none; font-weight: 500;">
+        Amsten Technologies Private Limited ™
+    </a>
+</p>
+<p style="font-size: 13px; color: #9aa0a6; margin: 0;">
+    © <script>document.write(new Date().getFullYear());</script> All Rights Reserved
+</p>
             </div>
 
         </div>
@@ -769,53 +1010,200 @@
 </footer>
 
 <style>
-/* Redesigned Footer Styles */
-.footer-area h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 600;
+
+/* SOCIAL */
+.footer-social a {
+    display:inline-block;
+    margin-right:12px;
+    font-size:18px;
+    color:#000;
 }
-.footer-area p {
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.6;
-}
+
 .footer-social a:hover {
-    color: #ffd700; /* Gold hover effect */
-    transition: 0.3s;
+    color:#888;
 }
-.newsletter-form input:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+
+/* CONTACT ALIGN FIX */
+.contact-item {
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:13px;
+    margin-bottom:8px;
+    line-height:1.6;
 }
-.newsletter-form button:hover {
-    background: #ffd700;
-    color: #007bff;
-    transition: 0.3s;
+
+.contact-item i {
+    color:#777;
+    margin-top:3px;
+    min-width:16px;
 }
-@media (max-width:991px){
-    .footer-area .text-lg-left {
-        text-align: center !important;
+
+/* LINKS */
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#555;
+}
+
+/* NEWSLETTER */
+.newsletter-form {
+    display:flex;
+    margin-top:10px;
+}
+
+.newsletter-form input {
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:13px;
+}
+
+.newsletter-form button {
+    padding:10px 20px;
+    margin-left:5px;
+    border:none;
+    border-radius:4px;
+    background:#000;
+    color:#fff;
+    font-size:13px;
+    cursor:pointer;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    margin-top:40px;
+    border-top:1px solid #ddd;
+    padding-top:15px;
+    text-align:center;
+    font-size:12px;
+    color:#666;
+}
+
+/* 🔥 PREMIUM MOBILE FIX */
+@media (max-width:768px) {
+
+    footer {
+        text-align:center;
     }
+
     .footer-social {
-        margin-top: 15px;
+        text-align:center;
+        margin:15px 0 25px;
     }
+
+    .footer-social a {
+        margin:0 10px;
+        font-size:17px;
+    }
+
+    h4 {
+        margin-top:10px;
+        margin-bottom:8px;
+    }
+
+    p {
+        font-size:12.5px !important;
+        line-height:1.6;
+    }
+
+    /* CONTACT CLEAN ALIGN */
+    .contact-item {
+        justify-content:flex-start;
+        text-align:left;
+        max-width:320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ADDRESS WRAP FIX */
+    .contact-item span {
+        display:block;
+    }
+
+    /* NEWSLETTER CLEAN STACK */
     .newsletter-form {
-        flex-direction: column;
+        flex-direction:column;
+        gap:8px;
+        max-width:320px;
+        margin:10px auto 0;
     }
-    .newsletter-form input {
-        margin: 0 0 10px 0;
-        width: 100%;
-    }
+
+    .newsletter-form input,
     .newsletter-form button {
-        width: 100%;
+        width:100%;
+        margin:0;
+        border-radius:4px;
+    }
+
+    /* BETTER SPACING BETWEEN SECTIONS */
+    .col-lg-3,
+    .col-lg-4 {
+        margin-bottom:25px;
+    }
+
+    /* FOOTER BOTTOM CLEAN */
+    .footer-bottom {
+        margin-top:25px;
+        padding-top:12px;
+        font-size:11.5px;
+    }
+}
+
+</style>
+   <!-- Scroll Up -->
+<div id="back-top" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: bottom 0.3s ease;
+">
+    <a title="Go to Top" href="#" style="color: black; font-size: 24px; text-decoration: none;">
+        <i class="fas fa-level-up-alt"></i>
+    </a>
+</div>
+
+<!-- Mobile adjustments -->
+<style>
+/* Push up button for medium screens */
+@media (max-width: 768px) {
+    #back-top {
+        bottom: 70px !important; /* increased distance from bottom */
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    #back-top a {
+        font-size: 22px !important;
+    }
+}
+
+/* Push even higher for very small screens */
+@media (max-width: 480px) {
+    #back-top {
+        bottom: 90px !important; /* higher on tiny screens */
+        right: 15px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+    #back-top a {
+        font-size: 20px !important;
     }
 }
 </style>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-    </div>
 
     <!-- JS here -->
 

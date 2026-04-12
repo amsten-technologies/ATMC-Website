@@ -1,15 +1,14 @@
-$(document).ready(function(){
-    
-    (function($) {
+$(document).ready(function () {
+
+    (function ($) {
         "use strict";
 
-    
-    jQuery.validator.addMethod('answercheck', function (value, element) {
-        return this.optional(element) || /^\bcat\b$/.test(value)
-    }, "type the correct answer -_-");
+        // Custom validation (optional - you can remove if not needed)
+        jQuery.validator.addMethod('answercheck', function (value, element) {
+            return this.optional(element) || /^\bcat\b$/.test(value);
+        }, "Please enter the correct answer.");
 
-    // validate contactForm form
-    $(function() {
+        // Validate contact form
         $('#contactForm').validate({
             rules: {
                 name: {
@@ -30,56 +29,66 @@ $(document).ready(function(){
                 },
                 message: {
                     required: true,
-                    minlength: 20
+                    minlength: 10
                 }
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "Please enter your name",
+                    minlength: "Name must be at least 2 characters long."
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "Please enter a subject",
+                    minlength: "Subject must be at least 4 characters long."
                 },
                 number: {
-                    required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 5 characters"
+                    required: "Please enter your phone number",
+                    minlength: "Phone number must be at least 5 digits."
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email address."
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Please enter your message",
+                    minlength: "Message must be at least 10 characters long."
                 }
             },
-            submitHandler: function(form) {
+
+            // Styling for errors (makes it look premium)
+            errorElement: "span",
+            errorClass: "text-danger",
+            highlight: function (element) {
+                $(element).addClass("is-invalid");
+            },
+            unhighlight: function (element) {
+                $(element).removeClass("is-invalid");
+            },
+
+            submitHandler: function (form) {
                 $(form).ajaxSubmit({
-                    type:"POST",
+                    type: "POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
-                    success: function() {
+                    url: "contact_process.php",
+                    success: function () {
                         $('#contactForm :input').attr('disabled', 'disabled');
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
-                            $('#success').fadeIn()
+                        $('#contactForm').fadeTo("slow", 1, function () {
+                            $('#success').fadeIn();
                             $('.modal').modal('hide');
-		                	$('#success').modal('show');
-                        })
+                            $('#success').modal('show');
+                        });
                     },
-                    error: function() {
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $('#error').fadeIn()
+                    error: function () {
+                        $('#contactForm').fadeTo("slow", 1, function () {
+                            $('#error').fadeIn();
                             $('.modal').modal('hide');
-		                	$('#error').modal('show');
-                        })
+                            $('#error').modal('show');
+                        });
                     }
-                })
+                });
             }
-        })
-    })
-        
- })(jQuery)
-})
+        });
+
+    })(jQuery);
+
+});

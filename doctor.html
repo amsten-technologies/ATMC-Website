@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Medical HTML-5 Template </title>
+    <title>ATMC</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -25,18 +25,22 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
+     <!-- Preloader Start -->
+<div id="preloader-active" style="position:fixed;width:100%;height:100%;top:0;left:0;z-index:999999;background:#fff;display:flex;align-items:center;justify-content:center;">
+    
+    <div class="preloader-inner" style="text-align:center;">
+        
+        <!-- REMOVE circle -->
+        <!-- <div class="preloader-circle"></div> -->
+
+        <div class="preloader-img">
+            <img src="assets/img/logo/loader.jpg" alt="logo"
+                 style="width:180px; height:auto; display:block; margin:auto;">
         </div>
+
     </div>
-    <!-- Preloader Start -->
+
+</div>
 <header>
     <!--? Header Start -->
     <div class="header-area">
@@ -46,33 +50,25 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="index.html"><img src="assets/img/logo/logo.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="menu-main d-flex align-items-center justify-content-end">
                             <!-- Main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
-                                <nav>
+                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="doctor.html">Doctors</a></li>
-                                        <li><a href="department.html">Department</a></li>
-                                        <li><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog_details.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li><a href="about.html">ABOUT</a></li>
+                                        <li><a href="doctor.html">DOCTORS</a></li>
+                                        <li><a href="biosafe.html">BIOSAFETY</a></li>
+                                        <li><a href="blog.html">BLOG</a></li>
+                                        <li><a href="contact.html">CONTACT</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn">01654.066.456</a>
-                            </div>
+                           
                         </div>
                     </div>   
                     <!-- Mobile Menu -->
@@ -86,224 +82,533 @@
     <!-- Header End -->
 </header>
 <main>
-    <!--? Hero Start -->
-    <div class="slider-area2">
-        <div class="slider-height2 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                <div class="col-xl-12">
-                    <div class="hero-cap hero-cap2 text-center">
-                        <h2>Doctors</h2>
+
+<!--? Hero Start -->
+<div class="about-area section-padding2" style="background:#fff; padding-bottom:40px;">
+
+    <div class="container">
+        <div class="row align-items-start"> <!-- 🔥 changed from center to start -->
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 col-md-10">
+                <div class="about-caption">
+
+                    <div class="section-tittle section-tittle2 mb-35">
+                        <span style="font-size:15px;">Our Doctors</span>
+
+                        <h2 style="
+                            font-size:42px;
+                            font-weight:800;
+                            line-height:1.2;
+                            color:#0b1c39;
+                        ">
+                            HIGHLY QUALIFIED & EXPERIENCED MEDICAL SPECIALISTS
+                        </h2>
                     </div>
-                </div>
+
+                    <p style="font-size:16px;">
+                        Our team of expert doctors forms the backbone of ATMC, bringing together years of clinical experience, advanced knowledge, and a commitment to excellence in patient care.
+                    </p>
+
+                    <p style="font-size:16px;">
+                        Strategically serving the people of Ganderbal and surrounding regions, our specialists ensure accurate diagnosis, effective treatment, and compassionate support at every step.
+                    </p>
+
+                    <p style="font-size:16px;">
+                        With a patient-first approach across all specialties, we are dedicated to delivering the highest standards of healthcare—right here in your own district.
+                    </p>
+
                 </div>
             </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 col-md-12">
+                <div style="padding-top:10px;"> <!-- 🔥 fine alignment control -->
+                    <img src="assets/img/gallery/doctors.png" alt="" style="width:100%; max-width:520px;">
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Hero End -->
-    <!--? Team Start -->
-    <div class="team-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-100">
-                        <span>Our Doctors</span>
-                        <h2>Our Specialist</h2>
-                    </div>
+
+</div>
+<!-- Hero End -->
+ 
+<!--? Doctors About Start-->
+<div style="
+    position:relative;
+    padding:100px 20px;
+    text-align:center;
+    background:url('assets/img/gallery/team1.png') center/cover no-repeat;
+">
+
+    <!-- overlay -->
+    <div style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(255,255,255,0.9);
+    "></div>
+
+    <div style="position:relative; z-index:2; max-width:800px; margin:0 auto;">
+
+        <span style="
+            display:inline-block;
+            font-size:13px;
+            letter-spacing:1px;
+            color:#3b5bfd;
+            position:relative;
+            padding-left:50px;
+            font-weight:700;
+        ">
+            <span style="
+                position:absolute;
+                left:0;
+                top:50%;
+                width:40px;
+                height:2px;
+                background:#3b5bfd;
+                transform:translateY(-50%);
+            "></span>
+            CLINICAL EXCELLENCE
+        </span>
+
+        <h2 style="
+            font-size:32px;
+            font-weight:700;
+            margin-top:15px;
+            color:#0b1c39;
+        ">
+            Trusted Expertise Across Specialties
+        </h2>
+
+        <p style="font-size:15px; color:#506172; margin-top:20px; line-height:1.7;">
+            Our medical team brings together specialists from diverse fields, ensuring comprehensive care under one roof with precision and dedication.
+        </p>
+
+        <p style="font-size:15px; color:#506172; line-height:1.7;">
+            Through collaboration and modern medical practices, we deliver personalized treatments designed for every patient’s unique needs.
+        </p>
+
+        <p style="font-size:15px; color:#506172; line-height:1.7;">
+            We remain committed to providing advanced, accessible, and compassionate healthcare for the community we serve.
+        </p>
+
+    </div>
+
+</div>
+<!-- Doctors About End -->
+
+     <!--? Team Start -->
+<div class="team-area section-padding30">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-12">
+
+                <div style="text-align:center; margin-bottom:70px;">
+
+                    <!-- DASH + TEXT -->
+                    <span style="
+                        display:inline-block;
+                        position:relative;
+                        padding-left:50px;
+                        font-size:15px;
+                        font-weight:700;
+                        color:#3b5bfd;
+                    ">
+                        <span style="
+                            position:absolute;
+                            left:0;
+                            top:50%;
+                            width:40px;
+                            height:2px;
+                            background:#3b5bfd;
+                            transform:translateY(-50%);
+                        "></span>
+                        ATMC DOCTORS
+                    </span>
+
+                    <!-- MAIN HEADING -->
+                    <h2 style="
+                        font-size:35px;
+                        font-weight:800;
+                        margin-top:15px;
+                        color:#0b1c39;
+                        text-align:center;
+                    ">
+                        Our Specialists
+                    </h2>
+
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team2.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Alvin Maxwell</a></h3>
-                            <span>Creative UI Designer</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Maria Smith</a></h3>
-                            <span>Agency Manager</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team1.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Angela Doe</a></h3>
-                            <span>Designer</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team1.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Angela Doe</a></h3>
-                            <span>Designer</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team2.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Alvin Maxwell</a></h3>
-                            <span>Creative UI Designer</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Maria Smith</a></h3>
-                            <span>Agency Manager</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
+
+        <div class="row">
+
+            <!-- Doctor 1 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="single-team mb-30 text-center">
+
+                    <div class="team-img">
+                        <img src="assets/img/gallery/team2.png" alt="" style="width:100%;">
+                    </div>
+
+                    <div class="team-caption">
+                        <h3><a href="#">Mr. Khawar Mufti</a></h3>
+                        <span>Director</span>
+
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="single-team mb-30 text-center">
+
+                    <div class="team-img">
+                        <img src="assets/img/gallery/team3.png" alt="" style="width:100%;">
+                    </div>
+
+                    <div class="team-caption">
+                        <h3><a href="#">Dr. Gulnar Mufti</a></h3>
+                        <span>Emergency Physician</span>
+
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="single-team mb-30 text-center">
+
+                    <div class="team-img">
+                        <img src="assets/img/gallery/team1.png" alt="" style="width:100%;">
+                    </div>
+
+                    <div class="team-caption">
+                        <h3><a href="#">Dr. Arif Kashani</a></h3>
+                        <span>Cardiologist</span>
+
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-    <!-- Team End -->
+</div>
+<!-- Team End -->
+
     </main>
+    
     <footer>
-        <!--? Footer Start-->
-        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
-            <div class="container">
-                <div class="footer-top footer-padding">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>About Us</h4>
-                                    <div class="footer-pera">
-                                        <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod tempor cergelit rgh. </p>
-                                        <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-number mb-50">
-                                    <h4><span>+564 </span>7885 3222</h4>
-                                    <p>youremail@gmail.com</p>
-                                </div>
-                                <!-- Form -->
-                                <div class="footer-form">
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-                                                    Send
-                                                </button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div style="background:#fff; color:#000; padding:60px 0; border-top:1px solid rgba(0,0,0,0.08);">
+        <div class="container">
+            <div class="row justify-content-between align-items-start">
+                
+                <!-- LOGO + TAGLINE -->
+                <div class="col-lg-3 col-md-6 text-center text-lg-left">
+
+                    <img src="assets/img/logo/logo.jpg" style="max-width:180px; margin-bottom:15px;">
+
+                    <p style="margin-bottom:30px; font-size:13px; line-height:1.6;">
+                        Excellence in patient care from admission to discharge
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/918527216160"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="row d-flex justify-content-between align-items-center">
-                        <div class="col-xl-9 col-lg-8">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4">
-                            <!-- Footer Social -->
-                            <div class="footer-social f-right">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+
+                <!-- ABOUT -->
+                <div class="col-lg-3 col-md-6 text-center text-lg-left">
+                    <h4 style="font-size:16px; font-weight:600; margin-bottom:10px;">About Us</h4>
+
+                    <p style="font-size:13px; line-height:1.6;">
+                        We at <strong>ATMC</strong> are dedicated to providing best services to every individual.
+                    </p>
+
+                    <p style="font-size:13px; line-height:1.6;">
+                        Our mission is to ensure every patient receives personalized care, advanced treatment and faster recovery.
+                    </p>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-4 col-md-12 text-center text-lg-left">
+                    <h4 style="font-size:16px; font-weight:600; margin-bottom:10px;">Contact Us</h4>
+
+                    <!-- PHONE -->
+                    <p class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span><strong>Phone:</strong> <a href="tel:+918527216160">+91 8527216160</a></span>
+                    </p>
+
+                    <!-- EMAIL -->
+                    <p class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>Email:</strong> <a href="mailto:contact@atmc.com">contact@atmc.com</a></span>
+                    </p>
+
+          <p class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>
+        <strong>Address:</strong> 
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.207699,74.792504" target="_blank">
+            Malshahi Bagh, Ganderbal, Jammu & Kashmir
+        </a>
+    </span>
+</p>
+                    <!-- NEWSLETTER -->
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
+
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+               <p style="font-size: 12px; color: #9aa0a6; margin: 0;">
+    Developed by 
+    <a href="https://www.amsten.in" target="_blank" 
+       style="color: #6c757d; text-decoration: none; font-weight: 500;">
+        Amsten Technologies Private Limited ™
+    </a>
+</p>
+<p style="font-size: 13px; color: #9aa0a6; margin: 0;">
+    © <script>document.write(new Date().getFullYear());</script> All Rights Reserved
+</p>
+            </div>
+
         </div>
-        <!-- Footer End-->
-    </footer>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
+</footer>
+
+<style>
+
+/* SOCIAL */
+.footer-social a {
+    display:inline-block;
+    margin-right:12px;
+    font-size:18px;
+    color:#000;
+}
+
+.footer-social a:hover {
+    color:#888;
+}
+
+/* CONTACT ALIGN FIX */
+.contact-item {
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:13px;
+    margin-bottom:8px;
+    line-height:1.6;
+}
+
+.contact-item i {
+    color:#777;
+    margin-top:3px;
+    min-width:16px;
+}
+
+/* LINKS */
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#555;
+}
+
+/* NEWSLETTER */
+.newsletter-form {
+    display:flex;
+    margin-top:10px;
+}
+
+.newsletter-form input {
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:13px;
+}
+
+.newsletter-form button {
+    padding:10px 20px;
+    margin-left:5px;
+    border:none;
+    border-radius:4px;
+    background:#000;
+    color:#fff;
+    font-size:13px;
+    cursor:pointer;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    margin-top:40px;
+    border-top:1px solid #ddd;
+    padding-top:15px;
+    text-align:center;
+    font-size:12px;
+    color:#666;
+}
+
+/* 🔥 PREMIUM MOBILE FIX */
+@media (max-width:768px) {
+
+    footer {
+        text-align:center;
+    }
+
+    .footer-social {
+        text-align:center;
+        margin:15px 0 25px;
+    }
+
+    .footer-social a {
+        margin:0 10px;
+        font-size:17px;
+    }
+
+    h4 {
+        margin-top:10px;
+        margin-bottom:8px;
+    }
+
+    p {
+        font-size:12.5px !important;
+        line-height:1.6;
+    }
+
+    /* CONTACT CLEAN ALIGN */
+    .contact-item {
+        justify-content:flex-start;
+        text-align:left;
+        max-width:320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ADDRESS WRAP FIX */
+    .contact-item span {
+        display:block;
+    }
+
+    /* NEWSLETTER CLEAN STACK */
+    .newsletter-form {
+        flex-direction:column;
+        gap:8px;
+        max-width:320px;
+        margin:10px auto 0;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width:100%;
+        margin:0;
+        border-radius:4px;
+    }
+
+    /* BETTER SPACING BETWEEN SECTIONS */
+    .col-lg-3,
+    .col-lg-4 {
+        margin-bottom:25px;
+    }
+
+    /* FOOTER BOTTOM CLEAN */
+    .footer-bottom {
+        margin-top:25px;
+        padding-top:12px;
+        font-size:11.5px;
+    }
+}
+
+</style>
+    <!-- Scroll Up -->
+<div id="back-top" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: bottom 0.3s ease;
+">
+    <a title="Go to Top" href="#" style="color: black; font-size: 24px; text-decoration: none;">
+        <i class="fas fa-level-up-alt"></i>
+    </a>
+</div>
+
+<!-- Mobile adjustments -->
+<style>
+/* Push up button for medium screens */
+@media (max-width: 768px) {
+    #back-top {
+        bottom: 70px !important; /* increased distance from bottom */
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    #back-top a {
+        font-size: 22px !important;
+    }
+}
+
+/* Push even higher for very small screens */
+@media (max-width: 480px) {
+    #back-top {
+        bottom: 90px !important; /* higher on tiny screens */
+        right: 15px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+    #back-top a {
+        font-size: 20px !important;
+    }
+}
+</style>
 
     <!-- JS here -->
 

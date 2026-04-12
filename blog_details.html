@@ -22,18 +22,23 @@
 </head>
 
 <body>
-   <!--? Preloader Start -->
-   <div id="preloader-active">
-      <div class="preloader d-flex align-items-center justify-content-center">
-          <div class="preloader-inner position-relative">
-              <div class="preloader-circle"></div>
-              <div class="preloader-img pere-text">
-                  <img src="assets/img/logo/loder.png" alt="">
-              </div>
-          </div>
-      </div>
-   </div>
    <!-- Preloader Start -->
+<div id="preloader-active" style="position:fixed;width:100%;height:100%;top:0;left:0;z-index:999999;background:#fff;display:flex;align-items:center;justify-content:center;">
+    
+    <div class="preloader-inner" style="text-align:center;">
+        
+        <!-- REMOVE circle -->
+        <!-- <div class="preloader-circle"></div> -->
+
+        <div class="preloader-img">
+            <img src="assets/img/logo/loader.jpg" alt="logo"
+                 style="width:180px; height:auto; display:block; margin:auto;">
+        </div>
+
+    </div>
+
+</div>
+<!-- Preloader End -->
    <header>
       <!--? Header Start -->
       <div class="header-area">
@@ -43,33 +48,25 @@
                       <!-- Logo -->
                       <div class="col-xl-2 col-lg-2 col-md-1">
                           <div class="logo">
-                              <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                              <a href="index.html"><img src=assets/img/logo/logo.jpg" alt=""></a>
                           </div>
                       </div>
                       <div class="col-xl-10 col-lg-10 col-md-10">
                           <div class="menu-main d-flex align-items-center justify-content-end">
                               <!-- Main-menu -->
                               <div class="main-menu f-right d-none d-lg-block">
-                                  <nav>
-                                      <ul id="navigation">
-                                          <li><a href="index.html">Home</a></li>
-                                          <li><a href="about.html">About</a></li>
-                                          <li><a href="doctor.html">Doctors</a></li>
-                                          <li><a href="department.html">Department</a></li>
-                                          <li><a href="blog.html">Blog</a>
-                                              <ul class="submenu">
-                                                  <li><a href="blog.html">Blog</a></li>
-                                                  <li><a href="blog_details.html">Blog Details</a></li>
-                                                  <li><a href="elements.html">Element</a></li>
-                                              </ul>
-                                          </li>
-                                          <li><a href="contact.html">Contact</a></li>
-                                      </ul>
-                                  </nav>
+                                   <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li><a href="about.html">ABOUT</a></li>
+                                        <li><a href="doctor.html">DOCTORS</a></li>
+                                        <li><a href="biosafe.html">BIOSAFETY</a></li>
+                                        <li><a href="blog.html">BLOG</a></li>
+                                        <li><a href="contact.html">CONTACT</a></li>
+                                    </ul>
+                                </nav>
                               </div>
-                              <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                  <a href="#" class="btn header-btn">01654.066.456</a>
-                              </div>
+                              
                           </div>
                       </div>   
                       <!-- Mobile Menu -->
@@ -83,508 +80,699 @@
       <!-- Header End -->
    </header>
    <main>
-      <!--? Hero Start -->
-      <div class="slider-area2">
-         <div class="slider-height2 d-flex align-items-center">
-               <div class="container">
+   
+   <!-- HERO START -->
+<div style="
+    position:relative;
+    background:
+        linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.75)),
+        url('assets/img/gallery/blog-image 5.png') center/cover no-repeat;
+    overflow:hidden;
+">
+
+    <div style="
+        padding:120px 20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    ">
+
+        <div style="text-align:center; max-width:800px;">
+
+            <!-- TITLE -->
+            <h1 style="
+                color:#0b1c39;
+                font-weight:800;
+                font-size:44px;
+                margin-bottom:15px;
+                letter-spacing:1px;
+            ">
+                ATMC FEATURED ARTICLES
+            </h1>
+
+            <!-- SUBTITLE -->
+            <p style="
+                font-size:18px;
+                color:#506172;
+                line-height:1.6;
+                margin:0 auto;
+            ">
+                Explore insights, updates, and expert articles from <strong style="color:#0b1c39;">ATMC</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- HERO END -->
+    <!--================Blog Area =================-->
+<section class="blog_area single-post-area section-padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 posts-list">
+            <div class="single-post">
+               <div class="feature-img">
+                  <img class="img-fluid" src="assets/img/blog/single_blog_1.png" alt="">
+               </div>
+
+               <div class="blog_details">
+                  <h2 style="color: #2d2d2d;">
+                     Biomedical Waste Management Best Practices in Modern Healthcare Facilities
+                  </h2>
+
+                  <ul class="blog-info-link mt-3 mb-4">
+                     <li><a href="#"><i class="fa fa-user"></i> ATMC, Healthcare Safety</a></li>
+                     <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                  </ul>
+
+                  <p class="excert">
+                     Biomedical waste management plays a critical role in maintaining hospital hygiene and preventing the spread of infections.
+                     At ATMC, we follow strict protocols for segregation, collection, and safe disposal of medical waste.
+                  </p>
+
+                  <p>
+                     Proper handling of biomedical waste ensures the safety of healthcare workers, patients, and the environment.
+                     ATMC implements color-coded segregation systems and advanced treatment methods to comply with biomedical waste regulations.
+                  </p>
+
+                  <div class="quote-wrapper">
+                     <div class="quotes">
+                        Effective biomedical waste management is not just a compliance requirement—it is a responsibility toward public health and environmental safety. ATMC ensures every step meets the highest standards.
+                     </div>
+                  </div>
+
+                  <p>
+                     From source segregation to final disposal, ATMC follows a structured workflow that minimizes contamination risks and promotes sustainable healthcare practices.
+                  </p>
+
+                  <p>
+                     Training healthcare staff and maintaining strict operational protocols are essential parts of ATMC’s biomedical waste management system.
+                  </p>
+               </div>
+            </div>
+
+            <div class="navigation-top">
+               <div class="d-sm-flex justify-content-between text-center">
+                  <p class="like-info">
+                     <span class="align-middle"><i class="fa fa-heart"></i></span>
+                     ATMC Team and 4 people like this
+                  </p>
+
+                  <div class="col-sm-4 text-center my-2 my-sm-0"></div>
+
+                  <ul class="social-icons">
+                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                     <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                  </ul>
+               </div>
+
+               <div class="navigation-area">
                   <div class="row">
-                     <div class="col-xl-12">
-                           <div class="hero-cap hero-cap2 text-center">
-                              <h2>Blog Details</h2>
-                           </div>
-                     </div>
-                  </div>
-               </div>
-         </div>
-      </div>
-      <!-- Hero End -->
-      <!--================Blog Area =================-->
-      <section class="blog_area single-post-area section-padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-8 posts-list">
-                  <div class="single-post">
-                     <div class="feature-img">
-                        <img class="img-fluid" src="assets/img/blog/single_blog_1.png" alt="">
-                     </div>
-                     <div class="blog_details">
-                        <h2 style="color: #2d2d2d;">Second divided from form fish beast made every of seas
-                           all gathered us saying he our
-                        </h2>
-                        <ul class="blog-info-link mt-3 mb-4">
-                           <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                           <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                        </ul>
-                        <p class="excert">
-                           MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                           should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                           fraction of the camp price. However, who has the willpower
-                        </p>
-                        <p>
-                           MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                           should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                           fraction of the camp price. However, who has the willpower to actually sit through a
-                           self-imposed MCSE training. who has the willpower to actually
-                        </p>
-                        <div class="quote-wrapper">
-                           <div class="quotes">
-                              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                              should have to spend money on boot camp when you can get the MCSE study materials yourself at
-                              a fraction of the camp price. However, who has the willpower to actually sit through a
-                              self-imposed MCSE training.
-                           </div>
-                        </div>
-                        <p>
-                           MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                           should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                           fraction of the camp price. However, who has the willpower
-                        </p>
-                        <p>
-                           MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                           should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                           fraction of the camp price. However, who has the willpower to actually sit through a
-                           self-imposed MCSE training. who has the willpower to actually
-                        </p>
-                     </div>
-                  </div>
-                  <div class="navigation-top">
-                     <div class="d-sm-flex justify-content-between text-center">
-                        <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily and 4
-                           people like this</p>
-                        <div class="col-sm-4 text-center my-2 my-sm-0">
-                           <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> -->
-                        </div>
-                        <ul class="social-icons">
-                           <li><a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
-                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                           <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                        </ul>
-                     </div>
-                     <div class="navigation-area">
-                        <div class="row">
-                           <div
-                              class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                              <div class="thumb">
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/preview.png" alt="">
-                                 </a>
-                              </div>
-                              <div class="arrow">
-                                 <a href="#">
-                                    <span class="lnr text-white ti-arrow-left"></span>
-                                 </a>
-                              </div>
-                              <div class="detials">
-                                 <p>Prev Post</p>
-                                 <a href="#">
-                                    <h4 style="color: #2d2d2d;">Space The Final Frontier</h4>
-                                 </a>
-                              </div>
-                           </div>
-                           <div
-                              class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                              <div class="detials">
-                                 <p>Next Post</p>
-                                 <a href="#">
-                                    <h4 style="color: #2d2d2d;">Telescopes 101</h4>
-                                 </a>
-                              </div>
-                              <div class="arrow">
-                                 <a href="#">
-                                    <span class="lnr text-white ti-arrow-right"></span>
-                                 </a>
-                              </div>
-                              <div class="thumb">
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/next.png" alt="">
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="blog-author">
-                     <div class="media align-items-center">
-                        <img src="assets/img/blog/author.png" alt="">
-                        <div class="media-body">
+                     <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                        <div class="thumb">
                            <a href="#">
-                              <h4>Harvard milan</h4>
+                              <img class="img-fluid" src="assets/img/post/preview.png" alt="">
                            </a>
-                           <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he
-                              our dominion twon Second divided from</p>
+                        </div>
+
+                        <div class="arrow">
+                           <a href="#">
+                              <span class="lnr text-white ti-arrow-left"></span>
+                           </a>
+                        </div>
+
+                        <div class="detials">
+                           <p>Prev Post</p>
+                           <a href="#">
+                              <h4 style="color: #2d2d2d;">Infection Control Protocols in Hospitals</h4>
+                           </a>
                         </div>
                      </div>
-                  </div>
-                  <div class="comments-area">
-                     <h4>05 Comments</h4>
-                     <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                           <div class="user justify-content-between d-flex">
-                              <div class="thumb">
-                                 <img src="assets/img/comment/comment_1.png" alt="">
-                              </div>
-                              <div class="desc">
-                                 <p class="comment">
-                                    Multiply sea night grass fourth day sea lesser rule open subdue female fill which them
-                                    Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
-                                 </p>
-                                 <div class="d-flex justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                       <h5>
-                                          <a href="#">Emilly Blunt</a>
-                                       </h5>
-                                       <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    </div>
-                                    <div class="reply-btn">
-                                       <a href="#" class="btn-reply text-uppercase">reply</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+
+                     <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                        <div class="detials">
+                           <p>Next Post</p>
+                           <a href="#">
+                              <h4 style="color: #2d2d2d;">Safe Disposal of Biomedical Waste</h4>
+                           </a>
+                        </div>
+
+                        <div class="arrow">
+                           <a href="#">
+                              <span class="lnr text-white ti-arrow-right"></span>
+                           </a>
+                        </div>
+
+                        <div class="thumb">
+                           <a href="#">
+                              <img class="img-fluid" src="assets/img/post/next.png" alt="">
+                           </a>
                         </div>
                      </div>
-                     <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                           <div class="user justify-content-between d-flex">
-                              <div class="thumb">
-                                 <img src="assets/img/comment/comment_2.png" alt="">
-                              </div>
-                              <div class="desc">
-                                 <p class="comment">
-                                    Multiply sea night grass fourth day sea lesser rule open subdue female fill which them
-                                    Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
-                                 </p>
-                                 <div class="d-flex justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                       <h5>
-                                          <a href="#">Emilly Blunt</a>
-                                       </h5>
-                                       <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    </div>
-                                    <div class="reply-btn">
-                                       <a href="#" class="btn-reply text-uppercase">reply</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                           <div class="user justify-content-between d-flex">
-                              <div class="thumb">
-                                 <img src="assets/img/comment/comment_3.png" alt="">
-                              </div>
-                              <div class="desc">
-                                 <p class="comment">
-                                    Multiply sea night grass fourth day sea lesser rule open subdue female fill which them
-                                    Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
-                                 </p>
-                                 <div class="d-flex justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                       <h5>
-                                          <a href="#">Emilly Blunt</a>
-                                       </h5>
-                                       <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    </div>
-                                    <div class="reply-btn">
-                                       <a href="#" class="btn-reply text-uppercase">reply</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="comment-form">
-                     <h4>Leave a Reply</h4>
-                     <form class="form-contact comment_form" action="#" id="commentForm">
-                        <div class="row">
-                           <div class="col-12">
-                              <div class="form-group">
-                                 <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9"
-                                    placeholder="Write Comment"></textarea>
-                              </div>
-                           </div>
-                           <div class="col-sm-6">
-                              <div class="form-group">
-                                 <input class="form-control" name="name" id="name" type="text" placeholder="Name">
-                              </div>
-                           </div>
-                           <div class="col-sm-6">
-                              <div class="form-group">
-                                 <input class="form-control" name="email" id="email" type="email" placeholder="Email">
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="form-group">
-                                 <input class="form-control" name="website" id="website" type="text" placeholder="Website">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <button type="submit" class="button button-contactForm btn_1 boxed-btn">Post Comment</button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-               <div class="col-lg-4">
-                  <div class="blog_right_sidebar">
-                     <aside class="single_sidebar_widget search_widget">
-                        <form action="#">
-                           <div class="form-group">
-                              <div class="input-group mb-3">
-                                 <input type="text" class="form-control" placeholder='Search Keyword'
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
-                                 <div class="input-group-append">
-                                    <button class="btns" type="button"><i class="ti-search"></i></button>
-                                 </div>
-                              </div>
-                           </div>
-                           <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                              type="submit">Search</button>
-                        </form>
-                     </aside>
-                     <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
-                        <ul class="list cat-list">
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Resaurant food</p>
-                                 <p>(37)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Travel news</p>
-                                 <p>(10)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Modern technology</p>
-                                 <p>(03)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Product</p>
-                                 <p>(11)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Inspiration</p>
-                                 <p>(21)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Health Care</p>
-                                 <p>(21)</p>
-                              </a>
-                           </li>
-                        </ul>
-                     </aside>
-                     <aside class="single_sidebar_widget popular_post_widget">
-                        <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                        <div class="media post_item">
-                           <img src="assets/img/post/post_1.png" alt="post">
-                           <div class="media-body">
-                              <a href="blog_details.html">
-                                 <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                              </a>
-                              <p>January 12, 2019</p>
-                           </div>
-                        </div>
-                        <div class="media post_item">
-                           <img src="assets/img/post/post_2.png" alt="post">
-                           <div class="media-body">
-                              <a href="blog_details.html">
-                                 <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
-                              </a>
-                              <p>02 Hours ago</p>
-                           </div>
-                        </div>
-                        <div class="media post_item">
-                           <img src="assets/img/post/post_3.png" alt="post">
-                           <div class="media-body">
-                              <a href="blog_details.html">
-                                 <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
-                              </a>
-                              <p>03 Hours ago</p>
-                           </div>
-                        </div>
-                        <div class="media post_item">
-                           <img src="assets/img/post/post_4.png" alt="post">
-                           <div class="media-body">
-                              <a href="blog_details.html">
-                                 <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
-                              </a>
-                              <p>01 Hours ago</p>
-                           </div>
-                        </div>
-                     </aside>
-                     <aside class="single_sidebar_widget tag_cloud_widget">
-                        <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
-                        <ul class="list">
-                           <li>
-                              <a href="#">project</a>
-                           </li>
-                           <li>
-                              <a href="#">love</a>
-                           </li>
-                           <li>
-                              <a href="#">technology</a>
-                           </li>
-                           <li>
-                              <a href="#">travel</a>
-                           </li>
-                           <li>
-                              <a href="#">restaurant</a>
-                           </li>
-                           <li>
-                              <a href="#">life style</a>
-                           </li>
-                           <li>
-                              <a href="#">design</a>
-                           </li>
-                           <li>
-                              <a href="#">illustration</a>
-                           </li>
-                        </ul>
-                     </aside>
-                     <aside class="single_sidebar_widget instagram_feeds">
-                        <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
-                        <ul class="instagram_row flex-wrap">
-                           <li>
-                              <a href="#">
-                                 <img class="img-fluid" src="assets/img/post/post_5.png" alt="">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#">
-                                 <img class="img-fluid" src="assets/img/post/post_6.png" alt="">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#">
-                                 <img class="img-fluid" src="assets/img/post/post_7.png" alt="">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#">
-                                 <img class="img-fluid" src="assets/img/post/post_8.png" alt="">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#">
-                                 <img class="img-fluid" src="assets/img/post/post_9.png" alt="">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#">
-                                 <img class="img-fluid" src="assets/img/post/post_10.png" alt="">
-                              </a>
-                           </li>
-                        </ul>
-                     </aside>
-                     <aside class="single_sidebar_widget newsletter_widget">
-                        <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
-                        <form action="#">
-                           <div class="form-group">
-                              <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                 onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                           </div>
-                           <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                              type="submit">Subscribe</button>
-                        </form>
-                     </aside>
                   </div>
                </div>
             </div>
+
+            <div class="blog-author">
+               <div class="media align-items-center">
+                  <img src="assets/img/blog/author.png" alt="">
+                  <div class="media-body">
+                     <a href="#">
+                        <h4>ATMC Biomedical Team</h4>
+                     </a>
+                     <p>
+                        ATMC is committed to ensuring safe biomedical waste management through structured protocols,
+                        trained staff, and advanced treatment processes that protect both people and the environment.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="comments-area">
+               <h4>05 Comments</h4>
+
+               <div class="comment-list">
+                  <div class="single-comment justify-content-between d-flex">
+                     <div class="user justify-content-between d-flex">
+                        <div class="thumb">
+                           <img src="assets/img/comment/comment_1.png" alt="">
+                        </div>
+
+                        <div class="desc">
+                           <p class="comment">
+                              ATMC’s biomedical waste system ensures safety and compliance in our hospital operations.
+                           </p>
+
+                           <div class="d-flex justify-content-between">
+                              <div class="d-flex align-items-center">
+                                 <h5><a href="#">Dr. Health Safety</a></h5>
+                                 <p class="date">April 4, 2025 at 3:12 pm</p>
+                              </div>
+
+                              <div class="reply-btn">
+                                 <a href="#" class="btn-reply text-uppercase">reply</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="comment-list">
+                  <div class="single-comment justify-content-between d-flex">
+                     <div class="user justify-content-between d-flex">
+                        <div class="thumb">
+                           <img src="assets/img/comment/comment_2.png" alt="">
+                        </div>
+
+                        <div class="desc">
+                           <p class="comment">
+                              Proper segregation practices at ATMC help reduce infection risks significantly.
+                           </p>
+
+                           <div class="d-flex justify-content-between">
+                              <div class="d-flex align-items-center">
+                                 <h5><a href="#">Nurse Care</a></h5>
+                                 <p class="date">April 2, 2025 at 1:10 pm</p>
+                              </div>
+
+                              <div class="reply-btn">
+                                 <a href="#" class="btn-reply text-uppercase">reply</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="comment-list">
+                  <div class="single-comment justify-content-between d-flex">
+                     <div class="user justify-content-between d-flex">
+                        <div class="thumb">
+                           <img src="assets/img/comment/comment_3.png" alt="">
+                        </div>
+
+                        <div class="desc">
+                           <p class="comment">
+                              ATMC ensures environmentally safe disposal of biomedical waste through approved facilities.
+                           </p>
+
+                           <div class="d-flex justify-content-between">
+                              <div class="d-flex align-items-center">
+                                 <h5><a href="#">Hospital Admin</a></h5>
+                                 <p class="date">March 29, 2025 at 9:00 am</p>
+                              </div>
+
+                              <div class="reply-btn">
+                                 <a href="#" class="btn-reply text-uppercase">reply</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="comment-form">
+               <h4>Leave a Reply</h4>
+
+               <form class="form-contact comment_form" action="#" id="commentForm">
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="form-group">
+                           <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9"
+                              placeholder="Write your feedback about ATMC biomedical services"></textarea>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <input class="form-control" name="name" id="name" type="text" placeholder="Name">
+                        </div>
+                     </div>
+
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+                        </div>
+                     </div>
+
+                     <div class="col-12">
+                        <div class="form-group">
+                           <input class="form-control" name="website" id="website" type="text" placeholder="Organization / Hospital">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <button type="submit" class="button button-contactForm btn_1 boxed-btn">
+                        Post Comment
+                     </button>
+                  </div>
+               </form>
+            </div>
+
          </div>
-      </section>
-      <!--================ Blog Area end =================-->
-   </main>
-   <footer>
-      <!--? Footer Start-->
-      <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
-          <div class="container">
-              <div class="footer-top footer-padding">
-                  <div class="row d-flex justify-content-between">
-                      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
-                          <div class="single-footer-caption mb-50">
-                              <!-- logo -->
-                              <div class="footer-logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
-                          <div class="single-footer-caption mb-50">
-                              <div class="footer-tittle">
-                                  <h4>About Us</h4>
-                                  <div class="footer-pera">
-                                      <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod tempor cergelit rgh. </p>
-                                      <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                          <div class="single-footer-caption mb-50">
-                              <div class="footer-number mb-50">
-                                  <h4><span>+564 </span>7885 3222</h4>
-                                  <p>youremail@gmail.com</p>
-                              </div>
-                              <!-- Form -->
-                              <div class="footer-form">
-                                  <div id="mc_embed_signup">
-                                      <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                          <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
-                                          <div class="form-icon">
-                                              <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-                                                  Send
-                                              </button>
-                                          </div>
-                                          <div class="mt-10 info"></div>
-                                      </form>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+
+         <!-- Sidebar (unchanged structure, only text kept relevant) -->
+         <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+
+               <aside class="single_sidebar_widget search_widget">
+                  <form action="#">
+                     <div class="form-group">
+                        <div class="input-group mb-3">
+                           <input type="text" class="form-control" placeholder="Search ATMC updates">
+                           <div class="input-group-append">
+                              <button class="btns" type="button"><i class="ti-search"></i></button>
+                           </div>
+                        </div>
+                     </div>
+
+                     <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">
+                        Search
+                     </button>
+                  </form>
+               </aside>
+
+               <aside class="single_sidebar_widget post_category_widget">
+                  <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+                  <ul class="list cat-list">
+                     <li><a href="#" class="d-flex"><p>Biomedical Safety</p><p>(37)</p></a></li>
+                     <li><a href="#" class="d-flex"><p>Hospital Hygiene</p><p>(10)</p></a></li>
+                     <li><a href="#" class="d-flex"><p>Waste Management</p><p>(03)</p></a></li>
+                     <li><a href="#" class="d-flex"><p>Infection Control</p><p>(11)</p></a></li>
+                     <li><a href="#" class="d-flex"><p>Healthcare Systems</p><p>(21)</p></a></li>
+                     <li><a href="#" class="d-flex"><p>Public Health</p><p>(21)</p></a></li>
+                  </ul>
+               </aside>
+
+               <aside class="single_sidebar_widget popular_post_widget">
+                  <h3 class="widget_title" style="color: #2d2d2d;">Recent Posts</h3>
+
+                  <div class="media post_item">
+                     <img src="assets/img/post/post_1.png" alt="">
+                     <div class="media-body">
+                        <a href="#"><h3 style="color:#2d2d2d;">Biomedical Waste Segregation</h3></a>
+                        <p>Jan 12, 2025</p>
+                     </div>
                   </div>
-              </div>
-              <div class="footer-bottom">
-                  <div class="row d-flex justify-content-between align-items-center">
-                      <div class="col-xl-9 col-lg-8">
-                          <div class="footer-copy-right">
-                              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                          </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4">
-                          <!-- Footer Social -->
-                          <div class="footer-social f-right">
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fas fa-globe"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
-                          </div>
-                      </div>
+
+                  <div class="media post_item">
+                     <img src="assets/img/post/post_2.png" alt="">
+                     <div class="media-body">
+                        <a href="#"><h3 style="color:#2d2d2d;">Hospital Safety Protocols</h3></a>
+                        <p>2 Hours ago</p>
+                     </div>
                   </div>
-              </div>
-          </div>
+
+                  <div class="media post_item">
+                     <img src="assets/img/post/post_3.png" alt="">
+                     <div class="media-body">
+                        <a href="#"><h3 style="color:#2d2d2d;">Infection Control Systems</h3></a>
+                        <p>3 Hours ago</p>
+                     </div>
+                  </div>
+
+                  <div class="media post_item">
+                     <img src="assets/img/post/post_4.png" alt="">
+                     <div class="media-body">
+                        <a href="#"><h3 style="color:#2d2d2d;">Waste Disposal Guidelines</h3></a>
+                        <p>1 Hour ago</p>
+                     </div>
+                  </div>
+               </aside>
+
+               <aside class="single_sidebar_widget tag_cloud_widget">
+                  <h4 class="widget_title" style="color: #2d2d2d;">Tags</h4>
+                  <ul class="list">
+                     <li><a href="#">ATMC</a></li>
+                     <li><a href="#">biomedical</a></li>
+                     <li><a href="#">healthcare</a></li>
+                     <li><a href="#">waste</a></li>
+                     <li><a href="#">safety</a></li>
+                     <li><a href="#">infection</a></li>
+                     <li><a href="#">hospital</a></li>
+                     <li><a href="#">compliance</a></li>
+                  </ul>
+               </aside>
+
+               <aside class="single_sidebar_widget instagram_feeds">
+                  <h4 class="widget_title" style="color: #2d2d2d;">Gallery</h4>
+                  <ul class="instagram_row flex-wrap">
+                     <li><a href="#"><img class="img-fluid" src="assets/img/post/post_5.png"></a></li>
+                     <li><a href="#"><img class="img-fluid" src="assets/img/post/post_6.png"></a></li>
+                     <li><a href="#"><img class="img-fluid" src="assets/img/post/post_7.png"></a></li>
+                     <li><a href="#"><img class="img-fluid" src="assets/img/post/post_8.png"></a></li>
+                     <li><a href="#"><img class="img-fluid" src="assets/img/post/post_9.png"></a></li>
+                     <li><a href="#"><img class="img-fluid" src="assets/img/post/post_10.png"></a></li>
+                  </ul>
+               </aside>
+
+               <aside class="single_sidebar_widget newsletter_widget">
+                  <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
+                  <form action="#">
+                     <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter your email for ATMC updates">
+                     </div>
+                     <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn">
+                        Subscribe
+                     </button>
+                  </form>
+               </aside>
+
+            </div>
+         </div>
       </div>
-      <!-- Footer End-->
-  </footer>
-   <!-- Scroll Up -->
-   <div id="back-top" >
-         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
    </div>
+</section>
+<!--================ Blog Area end =================-->
+   <footer>
+    <div style="background:#fff; color:#000; padding:60px 0; border-top:1px solid rgba(0,0,0,0.08);">
+        <div class="container">
+            <div class="row justify-content-between align-items-start">
+                
+                <!-- LOGO + TAGLINE -->
+                <div class="col-lg-3 col-md-6 text-center text-lg-left">
+
+                    <img src="assets/img/logo/logo.jpg" style="max-width:180px; margin-bottom:15px;">
+
+                    <p style="margin-bottom:30px; font-size:13px; line-height:1.6;">
+                        Excellence in patient care from admission to discharge
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/918527216160"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- ABOUT -->
+                <div class="col-lg-3 col-md-6 text-center text-lg-left">
+                    <h4 style="font-size:16px; font-weight:600; margin-bottom:10px;">About Us</h4>
+
+                    <p style="font-size:13px; line-height:1.6;">
+                        We at <strong>ATMC</strong> are dedicated to providing best services to every individual.
+                    </p>
+
+                    <p style="font-size:13px; line-height:1.6;">
+                        Our mission is to ensure every patient receives personalized care, advanced treatment and faster recovery.
+                    </p>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-4 col-md-12 text-center text-lg-left">
+                    <h4 style="font-size:16px; font-weight:600; margin-bottom:10px;">Contact Us</h4>
+
+                    <!-- PHONE -->
+                    <p class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span><strong>Phone:</strong> <a href="tel:+918527216160">+91 8527216160</a></span>
+                    </p>
+
+                    <!-- EMAIL -->
+                    <p class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>Email:</strong> <a href="mailto:contact@atmc.com">contact@atmc.com</a></span>
+                    </p>
+
+          <p class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>
+        <strong>Address:</strong> 
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.207699,74.792504" target="_blank">
+            Malshahi Bagh, Ganderbal, Jammu & Kashmir
+        </a>
+    </span>
+</p>
+                    <!-- NEWSLETTER -->
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+               <p style="font-size: 12px; color: #9aa0a6; margin: 0;">
+    Developed by 
+    <a href="https://www.amsten.in" target="_blank" 
+       style="color: #6c757d; text-decoration: none; font-weight: 500;">
+        Amsten Technologies Private Limited ™
+    </a>
+</p>
+<p style="font-size: 13px; color: #9aa0a6; margin: 0;">
+    © <script>document.write(new Date().getFullYear());</script> All Rights Reserved
+</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<style>
+
+/* SOCIAL */
+.footer-social a {
+    display:inline-block;
+    margin-right:12px;
+    font-size:18px;
+    color:#000;
+}
+
+.footer-social a:hover {
+    color:#888;
+}
+
+/* CONTACT ALIGN FIX */
+.contact-item {
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:13px;
+    margin-bottom:8px;
+    line-height:1.6;
+}
+
+.contact-item i {
+    color:#777;
+    margin-top:3px;
+    min-width:16px;
+}
+
+/* LINKS */
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#555;
+}
+
+/* NEWSLETTER */
+.newsletter-form {
+    display:flex;
+    margin-top:10px;
+}
+
+.newsletter-form input {
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:13px;
+}
+
+.newsletter-form button {
+    padding:10px 20px;
+    margin-left:5px;
+    border:none;
+    border-radius:4px;
+    background:#000;
+    color:#fff;
+    font-size:13px;
+    cursor:pointer;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    margin-top:40px;
+    border-top:1px solid #ddd;
+    padding-top:15px;
+    text-align:center;
+    font-size:12px;
+    color:#666;
+}
+
+/* 🔥 PREMIUM MOBILE FIX */
+@media (max-width:768px) {
+
+    footer {
+        text-align:center;
+    }
+
+    .footer-social {
+        text-align:center;
+        margin:15px 0 25px;
+    }
+
+    .footer-social a {
+        margin:0 10px;
+        font-size:17px;
+    }
+
+    h4 {
+        margin-top:10px;
+        margin-bottom:8px;
+    }
+
+    p {
+        font-size:12.5px !important;
+        line-height:1.6;
+    }
+
+    /* CONTACT CLEAN ALIGN */
+    .contact-item {
+        justify-content:flex-start;
+        text-align:left;
+        max-width:320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ADDRESS WRAP FIX */
+    .contact-item span {
+        display:block;
+    }
+
+    /* NEWSLETTER CLEAN STACK */
+    .newsletter-form {
+        flex-direction:column;
+        gap:8px;
+        max-width:320px;
+        margin:10px auto 0;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width:100%;
+        margin:0;
+        border-radius:4px;
+    }
+
+    /* BETTER SPACING BETWEEN SECTIONS */
+    .col-lg-3,
+    .col-lg-4 {
+        margin-bottom:25px;
+    }
+
+    /* FOOTER BOTTOM CLEAN */
+    .footer-bottom {
+        margin-top:25px;
+        padding-top:12px;
+        font-size:11.5px;
+    }
+}
+
+</style>
+    <!-- Scroll Up -->
+<div id="back-top" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: bottom 0.3s ease;
+">
+    <a title="Go to Top" href="#" style="color: black; font-size: 24px; text-decoration: none;">
+        <i class="fas fa-level-up-alt"></i>
+    </a>
+</div>
+
+<!-- Mobile adjustments -->
+<style>
+/* Push up button for medium screens */
+@media (max-width: 768px) {
+    #back-top {
+        bottom: 70px !important; /* increased distance from bottom */
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    #back-top a {
+        font-size: 22px !important;
+    }
+}
+
+/* Push even higher for very small screens */
+@media (max-width: 480px) {
+    #back-top {
+        bottom: 90px !important; /* higher on tiny screens */
+        right: 15px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+    #back-top a {
+        font-size: 20px !important;
+    }
+}
+</style>
 
    <!-- JS here -->
 
