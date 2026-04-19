@@ -437,11 +437,66 @@
         </a>
     </span>
 </p>
+
                     <!-- NEWSLETTER -->
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                
+<form class="newsletter-form" novalidate onsubmit="return handleSubscribe(this)" style="display:flex; gap:10px;">
+    
+    <input type="email" name="email" placeholder="Your email address"
+           style="flex:1; padding:10px; border:1px solid #ccc; outline:none;">
+    
+    <button type="submit"
+            style="padding:10px 18px; border:none; background:#000; color:#fff; cursor:pointer;">
+        Subscribe
+    </button>
+
+</form>
+
+<p id="subscribeMessage" style="margin-top:10px; font-size:13px; display:none;"></p>
+
+<script>
+function handleSubscribe(form) {
+
+    const emailInput = form.querySelector('input[name="email"]');
+    const message = document.getElementById("subscribeMessage");
+    const email = emailInput.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // ❌ Custom validation (no browser popup now)
+    if (!email) {
+        message.style.display = "block";
+        message.style.color = "#d32f2f";
+        message.innerText = "Please enter the email address";
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        message.style.display = "block";
+        message.style.color = "#d32f2f";
+        message.innerText = "Please enter a valid email so we can keep you updated.";
+        return false;
+    }
+
+    // ✅ Hide form
+    form.style.display = "none";
+
+    // ✅ Success message
+    message.style.display = "block";
+    message.style.color = "#2e7d32";
+    message.innerText = "Thank you for subscribing to ATMC Newsletter. We’ll keep you updated with important health insights.";
+
+    emailInput.value = "";
+
+    setTimeout(() => {
+        message.style.display = "none";
+        form.style.display = "flex";
+    }, 4000);
+
+    return false;
+}
+</script>
+                   
                 </div>
             </div>
 
@@ -691,6 +746,117 @@ a:hover {
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+       <!-- Floating WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=918527216160&text=Hello%20ATMC,%20I%20would%20like%20to%20consult"
+   target="_blank"
+   class="atmc-float-btn">
+
+    <span class="btn-text">Consult ATMC</span>
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<style>
+.atmc-float-btn {
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+/* Icon */
+.atmc-float-btn i {
+    font-size: 18px;
+    color: #25D366;
+    transition: transform 0.25s ease;
+}
+
+/* Hover */
+.atmc-float-btn:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    border-color: rgba(0,0,0,0.15);
+}
+
+.atmc-float-btn:hover i {
+    transform: translateY(2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .atmc-float-btn {
+        bottom: 140px;
+        right: 12px;
+
+        width: 60px;
+        height: 60px;
+
+        padding: 0;
+        border-radius: 50%;
+
+        justify-content: center;
+        background: #ffffff;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .atmc-float-btn i {
+        font-size: 26px;
+    }
+}
+</style>
+
+<!-- Smooth Scroll Script (safe + scoped) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const anchors = document.querySelectorAll('a[href="#appointment-form"]');
+
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+
+            const target = document.querySelector('#appointment-form');
+            if (!target) return;
+
+            e.preventDefault();
+
+            const offset = 120;
+            const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: y,
+                behavior: "smooth"
+            });
+        });
+    });
+
+});
+</script>
+
 
     </body>
 </html>

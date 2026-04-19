@@ -87,6 +87,7 @@
 <!-- Slider Area Start -->
 <div class="slider-area position-relative">
     <div class="slider-active">
+
         <!-- First Slider -->
         <div class="single-slider slider-height d-flex align-items-center">
             <div class="container">
@@ -95,19 +96,20 @@
                         <div class="hero__caption">
                             <span>AL-TAWAKKUL MEDICAL CENTER</span>
 
-<h2 style="
-    font-size:42px;
-    font-weight:900;
-    color : teal;    
-    margin-top:15px;
-    line-height:1.2;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    border-left:5px solid teal;  
-    padding-left:15px;
-">
-    THE FIRST PRIVATE HOSPITAL OF  GANDERBAL DISTRICT
-</h2>
+                            <h2 style="
+                                font-size:42px;
+                                font-weight:900;
+                                color: teal;
+                                margin-top:15px;
+                                line-height:1.2;
+                                text-transform:uppercase;
+                                letter-spacing:1px;
+                                border-left:5px solid teal;
+                                padding-left:15px;
+                            ">
+                                THE FIRST PRIVATE HOSPITAL OF GANDERBAL DISTRICT
+                            </h2>
+
                             <h1 class="cd-headline letters scale">
                                 EXCELLENCE IN PATIENT CARE
                                 <strong class="cd-words-wrapper">
@@ -116,14 +118,54 @@
                                     <b>TO&nbsp;DISCHARGE</b>
                                 </strong>
                             </h1>
-                            <p data-animation="fadeInLeft" data-delay="0.1s">
+
+                            <p>
                                 Manage patient admission, inpatient care, billing, surgical preparation, and discharge seamlessly.
                             </p>
-                           <a href="#" class="dep-btn">Book Appointment<i class="ti-arrow-right"></i></a>
+
+                            <!-- BUTTON -->
+                            <a href="#appointment-form"
+                               style="
+                                   display:inline-flex;
+                                   align-items:center;
+                                   gap:10px;
+                                   margin-top:30px;
+                                   padding:14px 26px;
+
+                                   background:#ffffff;
+                                   color:#000000;
+
+                                   font-size:15px;
+                                   font-weight:600;
+                                   letter-spacing:0.6px;
+
+                                   border:1px solid #ffffff;
+                                   border-radius:0;
+
+                                   text-decoration:none;
+                                   transition:all 0.25s ease;
+                               "
+                               onmouseover="
+                                   this.style.backgroundColor='#000000';
+                                   this.style.color='#ffffff';
+                                   this.querySelector('i').style.transform='translateY(4px)';
+                               "
+                               onmouseout="
+                                   this.style.backgroundColor='#ffffff';
+                                   this.style.color='#000000';
+                                   this.querySelector('i').style.transform='translateY(0)';
+                               "
+                            >
+                                Book Appointment
+                                <i class="fas fa-arrow-down"
+                                   style="font-size:16px; transition:0.25s;">
+                                </i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
-            </div>          
+            </div>
         </div>
 
         <!-- Second Slider -->
@@ -132,7 +174,9 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                         <div class="hero__caption">
+
                             <span>AL-TAWAKKUL MEDICAL CENTER</span>
+
                             <h1 class="cd-headline letters scale">
                                 WE CARE ABOUT YOUR
                                 <strong class="cd-words-wrapper">
@@ -141,15 +185,56 @@
                                     <b>WELLBEING</b>
                                 </strong>
                             </h1>
-                            <p data-animation="fadeInRight" data-delay="0.1s">
+
+                            <p style="margin-top:15px;">
                                 We at ATMC are committed to your good health, faster recovery, and holistic wellbeing.
                             </p>
-                            <a href="#" class="dep-btn">Book Appointment<i class="ti-arrow-right"></i></a>
+
+                            <!-- FIXED BUTTON (VISIBLE NOW) -->
+                            <a href="#appointment-form"
+                               style="
+                                   display:inline-flex;
+                                   align-items:center;
+                                   gap:10px;
+                                   margin-top:30px;
+                                   padding:14px 26px;
+
+                                   background:#ffffff;
+                                   color:#000000;
+
+                                   font-size:15px;
+                                   font-weight:600;
+                                   letter-spacing:0.6px;
+
+                                   border:1px solid #ffffff;
+                                   border-radius:0;
+
+                                   text-decoration:none;
+                                   transition:all 0.25s ease;
+                               "
+                               onmouseover="
+                                   this.style.backgroundColor='#000000';
+                                   this.style.color='#ffffff';
+                                   this.querySelector('i').style.transform='translateY(4px)';
+                               "
+                               onmouseout="
+                                   this.style.backgroundColor='#ffffff';
+                                   this.style.color='#000000';
+                                   this.querySelector('i').style.transform='translateY(0)';
+                               "
+                            >
+                                Book Appointment
+                                <i class="fas fa-arrow-down"
+                                   style="font-size:16px; transition:0.25s;">
+                                </i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
-            </div>          
+            </div>
         </div>
+
     </div>
 </div>
 <!-- Slider Area End -->
@@ -211,246 +296,192 @@
         </div>
     </div>
     <!-- About  End-->
-    <!--? department_area_start  -->
-    <div class="department_area section-padding2">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                 <div style="display:flex; justify-content:center;">
-    <div style="width:100%; max-width:700px;">
+    <!-- SECTION TITLE -->
+<div style="display:flex; justify-content:center; margin-bottom:20px;">
+    <div style="width:100%; max-width:700px; text-align:center;">
 
-        <div style="text-align:center; margin-bottom:70px;">
-
-            <!-- DASH + TEXT -->
+        <!-- DASH + TEXT -->
+        <span style="
+            display:inline-block;
+            position:relative;
+            padding-left:50px;
+            font-size:15px;
+            font-weight:800;
+            color:#3b5bfd;
+        ">
             <span style="
-                display:inline-block;
-                position:relative;
-                padding-left:50px;
-                font-size:15px;
-                font-weight:800;
-                color:#3b5bfd;
-            ">
-                <span style="
-                    position:absolute;
-                    left:0;
-                    top:50%;
-                    width:40px;
-                    height:2px;
-                    background:#3b5bfd;
-                    transform:translateY(-50%);
-                "></span>
-                ATMC DEPARTMENTS
-            </span>
+                position:absolute;
+                left:0;
+                top:50%;
+                width:40px;
+                height:2px;
+                background:#3b5bfd;
+                transform:translateY(-50%);
+            "></span>
+            ATMC DEPARTMENTS
+        </span>
 
-            <!-- MAIN HEADING -->
-            <h2 style="
-                font-size:36px;
-                font-weight:800;
-                margin-top:15px;
-                color:#0b1c39;
-            ">
-                ATMC Medical Services
-            </h2>
+        <!-- MAIN HEADING -->
+        <h2 style="
+            font-size:32px;
+            font-weight:800;
+            margin-top:12px;
+            color:#0b1c39;
+        ">
+            ATMC Medical Services
+        </h2>
+
+    </div>
+</div>
+
+
+<!-- Moving Departments Row (UNCHANGED) -->
+<div style="overflow:hidden; width:100%; padding:25px 0;">
+
+    <div class="dept-scroll">
+
+        <!-- SET 1 -->
+        <div class="dept-track">
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="flaticon-cardiovascular"></i></div>
+                <p>Cardiology</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="flaticon-ear"></i></div>
+                <p>ENT</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="flaticon-bone"></i></div>
+                <p>Orthopedics</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="flaticon-lung"></i></div>
+                <p>Pulmonology</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+                <p>Neurology</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="flaticon-cell"></i></div>
+                <p>Pathology</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="fa-solid fa-user-doctor"></i></div>
+                <p>General Medicine</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="fa-solid fa-baby"></i></div>
+                <p>Pediatrics</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="fa-solid fa-x-ray"></i></div>
+                <p>Radiology</p>
+            </div>
+
+            <div class="dept-item">
+                <div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                <p>Emergency</p>
+            </div>
+
+        </div>
+
+        <!-- DUPLICATE -->
+        <div class="dept-track">
+
+            <div class="dept-item"><div class="icon-box"><i class="flaticon-cardiovascular"></i></div><p>Cardiology</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="flaticon-ear"></i></div><p>ENT</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="flaticon-bone"></i></div><p>Orthopedics</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="flaticon-lung"></i></div><p>Pulmonology</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="fa-solid fa-brain"></i></div><p>Neurology</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="flaticon-cell"></i></div><p>Pathology</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="fa-solid fa-user-doctor"></i></div><p>General Medicine</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="fa-solid fa-baby"></i></div><p>Pediatrics</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="fa-solid fa-x-ray"></i></div><p>Radiology</p></div>
+            <div class="dept-item"><div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div><p>Emergency</p></div>
 
         </div>
 
     </div>
 </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="depart_ment_tab mb-30">
-                      <!-- Tabs Buttons -->
-<ul class="nav" id="myTab" role="tablist">
 
-    <!-- Cardiology (KEEP HEART ICON + REMOVE GREEN STYLE ONLY) -->
-    <li class="nav-item">
-        <a class="nav-link" id="home-tab"
-           data-toggle="tab" href=""
-           role="tab" aria-controls="home" aria-selected="true">
-            <i class="flaticon-cardiovascular"></i>
-            <h4>Cardiology</h4>
-        </a>
-    </li>
+<style>
 
+/* SCROLL CONTAINER */
+.dept-scroll {
+    display:flex;
+    width:max-content;
+    animation: scrollLeft 25s linear infinite;
+    align-items:center;
+}
 
-    <!-- ENT -->
-    <li class="nav-item">
-        <a class="nav-link" id="contact-tab"
-           data-toggle="tab" href=""
-           role="tab" aria-controls="contact" aria-selected="false">
-            <i class="flaticon-ear"></i>
-            <h4>ENT</h4>
-        </a>
-    </li>
+.dept-track {
+    display:flex;
+    gap:70px;
+    padding-right:70px;
+}
 
-    <!-- Orthopedics -->
-    <li class="nav-item">
-        <a class="nav-link" id="Astrology-tab"
-           data-toggle="tab" href=""
-           role="tab" aria-controls="contact" aria-selected="false">
-            <i class="flaticon-bone"></i>
-            <h4>Orthopedics</h4>
-        </a>
-    </li>
+.dept-item {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    width:110px;
+    height:90px;
+    text-align:center;
+}
 
-    <!-- Pulmonology -->
-    <li class="nav-item">
-        <a class="nav-link" id="Neuroanatomy-tab"
-           data-toggle="tab" href=""
-           role="tab" aria-controls="contact" aria-selected="false">
-            <i class="flaticon-lung"></i>
-            <h4>Pulmonology</h4>
-        </a>
-    </li>
+.icon-box {
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
-<!-- Neurology -->
-<li class="nav-item">
-    <a class="nav-link" id="neurology-tab"
-       data-toggle="tab" href="#neurology"
-       role="tab" aria-controls="neurology" aria-selected="false">
-        <i class="fa-solid fa-brain"></i>
-        <h4>Neurology</h4>
-    </a>
-</li>
+.dept-item i {
+    font-size:28px;
+    color:#3b5bfd;
+    line-height:1;
+}
 
-    <!-- Pathology -->
-    <li class="nav-item">
-        <a class="nav-link" id="Blood-tab"
-           data-toggle="tab" href=""
-           role="tab" aria-controls="contact" aria-selected="false">
-            <i class="flaticon-cell"></i>
-            <h4>Pathology</h4>
-        </a>
-    </li>
+.dept-item p {
+    margin-top:6px;
+    font-weight:600;
+    font-size:14px;
+    color:#0b1c39;
+    line-height:1.2;
+}
 
-</ul>
-                    </div>
-                </div>
-            </div>
-            <div class="dept_main_info white-bg">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-lg-7">
-                               <div class="dept_info">
-    <h3>Comprehensive Healthcare <br> You Can Trust</h3>
-    <p>
-        At ATMC, we are committed to delivering high-quality healthcare services with compassion and expertise. 
-        Our team of experienced doctors and medical staff provide personalized care across multiple specialties, 
-        ensuring accurate diagnosis, effective treatment, and patient well-being. 
-        We prioritize safety, advanced medical practices, and a comfortable healing environment for every patient.
-    </p>
-     <a href="#" class="dep-btn">Book Appointment<i class="ti-arrow-right"></i></a>
-</div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="assets/img/gallery/department_man.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="assets/img/gallery/department_man.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="assets/img/gallery/department_man.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="assets/img/gallery/department_man.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="Neuroanatomy" role="tabpanel" aria-labelledby="Neuroanatomy-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="assets/img/gallery/department_man.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="Blood" role="tabpanel" aria-labelledby="Blood-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="assets/img/gallery/department_man.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    </div>
-            </div>
+.dept-scroll:hover {
+    animation-play-state: paused;
+}
 
-        </div>
-    </div>
-    <!-- department area end  -->
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .dept-scroll {
+        animation: scrollRight 25s linear infinite;
+    }
+
+    @keyframes scrollRight {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+    }
+}
+
+</style>
     <!-- Gallery Area Start -->
 <div style="padding:80px 20px;">
     <div style="max-width:1300px; margin:auto;">
@@ -628,78 +659,98 @@
         <div class="starups-img"></div>
     </div>
     <!--All startups End -->
-     <!--? Team Start -->
-     <div class="team-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-100">
-                        <span>ATMC Doctors</span>
-                        <h2>Our Specialists</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- single Tem -->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team2.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Khawar Mufti</a></h3>
-                            <span>Director</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Dr. Gulnar Mufti</a></h3>
-                            <span>Emergency Physician</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/team1.png" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Dr. Arif Kashani</a></h3>
-                            <span>Cardiologist</span>
-                            <!-- Team social -->
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
+  
+<!--? Team Start -->
+<div class="team-area section-padding30">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-tittle text-center mb-80">
+                    <span>ATMC Doctors</span>
+                    <h2>Our Specialists</h2>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+
+            <!-- Doctor 1 -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-team mb-30 team-card">
+                    <div class="team-img">
+                        <img src="assets/img/gallery/Khawar_Mufti.jpg" alt="Khawar Mufti">
+                    </div>
+                    <div class="team-caption" style="text-align:center; padding:20px 0;">
+                        <h3 style="margin-bottom:5px;">
+                            <a href="#" class="doctor-name">Mr. Khawar Mufti</a>
+                        </h3>
+                        <span class="doctor-role">Director</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-team mb-30 team-card">
+                    <div class="team-img">
+                        <img src="assets/img/gallery/Dr_Gulnar_Mufti.jpg" alt="Dr Gulnar Mufti">
+                    </div>
+                    <div class="team-caption" style="text-align:center; padding:20px 0;">
+                        <h3 style="margin-bottom:5px;">
+                            <a href="#" class="doctor-name">Dr. Gulnar Mufti</a>
+                        </h3>
+                        <span class="doctor-role">Emergency Physician</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-team mb-30 team-card">
+                    <div class="team-img">
+                        <img src="assets/img/gallery/Dr_Arif_Kashani.jpg" alt="Dr Arif Kashani">
+                    </div>
+                    <div class="team-caption" style="text-align:center; padding:20px 0;">
+                        <h3 style="margin-bottom:5px;">
+                            <a href="#" class="doctor-name">Dr. Arif Kashani</a>
+                        </h3>
+                        <span class="doctor-role">Cardiologist</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <!-- Team End -->
+</div>
+<!-- Team End -->
+
+<style>
+/* Name */
+.doctor-name {
+    color: #0b1c39;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Role */
+.doctor-role {
+    font-size: 14px;
+    color: #3b82f6; /* hospital blue */
+}
+
+/* Hover effect */
+.team-card:hover .doctor-name {
+    color: #3b82f6;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+</style>
+<!-- Team End -->
    <!--? Contact form Start -->
 <div id="appointment-form" class="contact-form-main">
     <div class="container">
@@ -983,11 +1034,64 @@
         </a>
     </span>
 </p>
-                    <!-- NEWSLETTER -->
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                   <!-- NEWSLETTER -->
+
+<form class="newsletter-form" novalidate onsubmit="return handleSubscribe(this)" style="display:flex; gap:10px;">
+    
+    <input type="email" name="email" placeholder="Your email address"
+           style="flex:1; padding:10px; border:1px solid #ccc; outline:none;">
+    
+    <button type="submit"
+            style="padding:10px 18px; border:none; background:#000; color:#fff; cursor:pointer;">
+        Subscribe
+    </button>
+
+</form>
+
+<p id="subscribeMessage" style="margin-top:10px; font-size:13px; display:none;"></p>
+
+<script>
+function handleSubscribe(form) {
+
+    const emailInput = form.querySelector('input[name="email"]');
+    const message = document.getElementById("subscribeMessage");
+    const email = emailInput.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    
+    if (!email) {
+        message.style.display = "block";
+        message.style.color = "#d32f2f";
+        message.innerText = "Please enter the email address";
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        message.style.display = "block";
+        message.style.color = "#d32f2f";
+        message.innerText = "Please enter a valid email so we can keep you updated.";
+        return false;
+    }
+
+    // ✅ Hide form
+    form.style.display = "none";
+
+    // ✅ Success message
+    message.style.display = "block";
+    message.style.color = "#2e7d32";
+    message.innerText = "Thank you for subscribing to ATMC Newsletter. We’ll keep you updated with important health insights.";
+
+    emailInput.value = "";
+
+    setTimeout(() => {
+        message.style.display = "none";
+        form.style.display = "flex";
+    }, 4000);
+
+    return false;
+}
+</script>
                 </div>
             </div>
 
@@ -1244,5 +1348,116 @@ a:hover {
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
     
+
+   <!-- Floating WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=918527216160&text=Hello%20ATMC,%20I%20would%20like%20to%20consult"
+   target="_blank"
+   class="atmc-float-btn">
+
+    <span class="btn-text">Consult ATMC</span>
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<style>
+.atmc-float-btn {
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+/* Icon */
+.atmc-float-btn i {
+    font-size: 18px;
+    color: #25D366;
+    transition: transform 0.25s ease;
+}
+
+/* Hover */
+.atmc-float-btn:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    border-color: rgba(0,0,0,0.15);
+}
+
+.atmc-float-btn:hover i {
+    transform: translateY(2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .atmc-float-btn {
+        bottom: 140px;
+        right: 12px;
+
+        width: 60px;
+        height: 60px;
+
+        padding: 0;
+        border-radius: 50%;
+
+        justify-content: center;
+        background: #ffffff;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .atmc-float-btn i {
+        font-size: 26px;
+    }
+}
+</style>
+
+<!-- Smooth Scroll Script (safe + scoped) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const anchors = document.querySelectorAll('a[href="#appointment-form"]');
+
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+
+            const target = document.querySelector('#appointment-form');
+            if (!target) return;
+
+            e.preventDefault();
+
+            const offset = 120;
+            const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: y,
+                behavior: "smooth"
+            });
+        });
+    });
+
+});
+</script>
+
     </body>
 </html>

@@ -201,121 +201,64 @@
 </div>
 <!-- Doctors About End -->
 
-     <!--? Team Start -->
+ <!--? Team Start -->
 <div class="team-area section-padding30">
     <div class="container">
 
         <!-- Section Title -->
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8 col-12">
-
-                <div style="text-align:center; margin-bottom:70px;">
-
-                    <!-- DASH + TEXT -->
-                    <span style="
-                        display:inline-block;
-                        position:relative;
-                        padding-left:50px;
-                        font-size:15px;
-                        font-weight:700;
-                        color:#3b5bfd;
-                    ">
-                        <span style="
-                            position:absolute;
-                            left:0;
-                            top:50%;
-                            width:40px;
-                            height:2px;
-                            background:#3b5bfd;
-                            transform:translateY(-50%);
-                        "></span>
-                        ATMC DOCTORS
-                    </span>
-
-                    <!-- MAIN HEADING -->
-                    <h2 style="
-                        font-size:35px;
-                        font-weight:800;
-                        margin-top:15px;
-                        color:#0b1c39;
-                        text-align:center;
-                    ">
-                        Our Specialists
-                    </h2>
-
+            <div class="col-lg-6">
+                <div class="section-tittle text-center mb-80">
+                    <span>ATMC Doctors</span>
+                    <h2>Our Specialists</h2>
                 </div>
-
             </div>
         </div>
 
         <div class="row">
 
             <!-- Doctor 1 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                <div class="single-team mb-30 text-center">
-
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-team mb-30 team-card">
                     <div class="team-img">
-                        <img src="assets/img/gallery/team2.png" alt="" style="width:100%;">
+                        <img src="assets/img/gallery/Khawar_Mufti.jpg" alt="Khawar Mufti">
                     </div>
-
-                    <div class="team-caption">
-                        <h3><a href="#">Mr. Khawar Mufti</a></h3>
-                        <span>Director</span>
-
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        </div>
+                    <div class="team-caption" style="text-align:center; padding:20px 0;">
+                        <h3 style="margin-bottom:5px;">
+                            <a href="#" class="doctor-name">Mr. Khawar Mufti</a>
+                        </h3>
+                        <span class="doctor-role">Director</span>
                     </div>
-
                 </div>
             </div>
 
             <!-- Doctor 2 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                <div class="single-team mb-30 text-center">
-
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-team mb-30 team-card">
                     <div class="team-img">
-                        <img src="assets/img/gallery/team3.png" alt="" style="width:100%;">
+                        <img src="assets/img/gallery/Dr_Gulnar_Mufti.jpg" alt="Dr Gulnar Mufti">
                     </div>
-
-                    <div class="team-caption">
-                        <h3><a href="#">Dr. Gulnar Mufti</a></h3>
-                        <span>Emergency Physician</span>
-
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        </div>
+                    <div class="team-caption" style="text-align:center; padding:20px 0;">
+                        <h3 style="margin-bottom:5px;">
+                            <a href="#" class="doctor-name">Dr. Gulnar Mufti</a>
+                        </h3>
+                        <span class="doctor-role">Emergency Physician</span>
                     </div>
-
                 </div>
             </div>
 
             <!-- Doctor 3 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                <div class="single-team mb-30 text-center">
-
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-team mb-30 team-card">
                     <div class="team-img">
-                        <img src="assets/img/gallery/team1.png" alt="" style="width:100%;">
+                        <img src="assets/img/gallery/Dr_Arif_Kashani.jpg" alt="Dr Arif Kashani">
                     </div>
-
-                    <div class="team-caption">
-                        <h3><a href="#">Dr. Arif Kashani</a></h3>
-                        <span>Cardiologist</span>
-
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        </div>
+                    <div class="team-caption" style="text-align:center; padding:20px 0;">
+                        <h3 style="margin-bottom:5px;">
+                            <a href="#" class="doctor-name">Dr. Arif Kashani</a>
+                        </h3>
+                        <span class="doctor-role">Cardiologist</span>
                     </div>
-
                 </div>
             </div>
 
@@ -388,11 +331,65 @@
         </a>
     </span>
 </p>
-                    <!-- NEWSLETTER -->
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                   <!-- NEWSLETTER -->
+                
+<form class="newsletter-form" novalidate onsubmit="return handleSubscribe(this)" style="display:flex; gap:10px;">
+    
+    <input type="email" name="email" placeholder="Your email address"
+           style="flex:1; padding:10px; border:1px solid #ccc; outline:none;">
+    
+    <button type="submit"
+            style="padding:10px 18px; border:none; background:#000; color:#fff; cursor:pointer;">
+        Subscribe
+    </button>
+
+</form>
+
+<p id="subscribeMessage" style="margin-top:10px; font-size:13px; display:none;"></p>
+
+<script>
+function handleSubscribe(form) {
+
+    const emailInput = form.querySelector('input[name="email"]');
+    const message = document.getElementById("subscribeMessage");
+    const email = emailInput.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // ❌ Custom validation (no browser popup now)
+    if (!email) {
+        message.style.display = "block";
+        message.style.color = "#d32f2f";
+        message.innerText = "Please enter the email address";
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        message.style.display = "block";
+        message.style.color = "#d32f2f";
+        message.innerText = "Please enter a valid email so we can keep you updated.";
+        return false;
+    }
+
+    // ✅ Hide form
+    form.style.display = "none";
+
+    // ✅ Success message
+    message.style.display = "block";
+    message.style.color = "#2e7d32";
+    message.innerText = "Thank you for subscribing to ATMC Newsletter. We’ll keep you updated with important health insights.";
+
+    emailInput.value = "";
+
+    setTimeout(() => {
+        message.style.display = "none";
+        form.style.display = "flex";
+    }, 4000);
+
+    return false;
+}
+</script>
+                    
                 </div>
             </div>
 
@@ -649,5 +646,116 @@ a:hover {
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
     
+
+        <!-- Floating WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=918527216160&text=Hello%20ATMC,%20I%20would%20like%20to%20consult"
+   target="_blank"
+   class="atmc-float-btn">
+
+    <span class="btn-text">Consult ATMC</span>
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<style>
+.atmc-float-btn {
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+/* Icon */
+.atmc-float-btn i {
+    font-size: 18px;
+    color: #25D366;
+    transition: transform 0.25s ease;
+}
+
+/* Hover */
+.atmc-float-btn:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    border-color: rgba(0,0,0,0.15);
+}
+
+.atmc-float-btn:hover i {
+    transform: translateY(2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .atmc-float-btn {
+        bottom: 140px;
+        right: 12px;
+
+        width: 60px;
+        height: 60px;
+
+        padding: 0;
+        border-radius: 50%;
+
+        justify-content: center;
+        background: #ffffff;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .atmc-float-btn i {
+        font-size: 26px;
+    }
+}
+</style>
+
+<!-- Smooth Scroll Script (safe + scoped) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const anchors = document.querySelectorAll('a[href="#appointment-form"]');
+
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+
+            const target = document.querySelector('#appointment-form');
+            if (!target) return;
+
+            e.preventDefault();
+
+            const offset = 120;
+            const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: y,
+                behavior: "smooth"
+            });
+        });
+    });
+
+});
+</script>
+
     </body>
 </html>
