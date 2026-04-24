@@ -841,7 +841,7 @@
 }
 </style>
 <!-- Team End -->
-   <!-- Flatpickr CSS -->
+  <!-- Flatpickr CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 <!-- Contact form Start -->
@@ -867,13 +867,11 @@
                         <div class="row">
 
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" name="name" placeholder="Name"
-                                    required autocapitalize="off" autocorrect="off">
+                                <input type="text" name="name" placeholder="Name" required>
                             </div>
 
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" name="phone" placeholder="Phone"
-                                    required inputmode="numeric" autocapitalize="off">
+                                <input type="text" name="phone" placeholder="Phone" required>
                             </div>
 
                             <div class="col-lg-6 col-md-6">
@@ -894,34 +892,30 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6">
-                                <input type="email" name="reply_to" placeholder="Email"
-                                    required autocapitalize="off" autocorrect="off"
-                                    spellcheck="false" style="text-transform: lowercase;">
+                                <input type="email" name="reply_to" placeholder="Email" required style="text-transform: lowercase;">
                             </div>
 
                             <div class="col-lg-12">
-                                <input type="text" name="address" placeholder="Address"
-                                    required autocapitalize="off" autocorrect="off">
+                                <input type="text" name="address" placeholder="Address" required>
                             </div>
 
+                            <!-- ✅ FIXED PLACEHOLDER -->
                             <div class="col-lg-6 col-md-6">
                                 <input type="text" id="appointment_date"
-                                    name="appointment_date" placeholder="Select Date" required>
+                                    name="appointment_date"
+                                    placeholder="Select Date" required>
                             </div>
 
+                            <!-- ✅ FIXED PLACEHOLDER -->
                             <div class="col-lg-6 col-md-6">
                                 <input type="text" id="appointment_time"
-                                    name="appointment_time" placeholder="Select Time" required>
+                                    name="appointment_time"
+                                    placeholder="Select Time" required>
                             </div>
 
-                            <!-- 🔥 FIXED MESSAGE FIELD -->
                             <div class="col-lg-12">
                                 <textarea name="message" id="message"
-                                    placeholder="Message"
-                                    required
-                                    autocapitalize="off"
-                                    autocorrect="off"
-                                    spellcheck="false"></textarea>
+                                    placeholder="Message" required></textarea>
                             </div>
 
                             <div class="col-lg-12">
@@ -944,13 +938,7 @@
 
         </div>
     </div>
-
-    <div class="from-left d-none d-lg-block">
-        <img src="assets/img/gallery/contact_form.png" alt="">
-    </div>
 </div>
-<!-- Contact form End -->
-
 
 <style>
 #contact-form input,
@@ -964,38 +952,29 @@
     background: transparent;
     outline: none;
 }
-
 #contact-form input:focus,
 #contact-form select:focus,
 #contact-form textarea:focus {
     border-bottom: 1px solid #28a745;
 }
-
 #contact-form textarea {
     min-height: 120px;
 }
-
 #contact-form .col-lg-6,
 #contact-form .col-lg-12 {
     margin-bottom: 25px;
 }
-
 .dep-btn {
     border: 1px solid #28a745;
     background: transparent;
     color: #28a745;
     padding: 8px 20px;
-    font-size: 14px;
-    border-radius: 0;
-    transition: 0.3s;
 }
-
 .dep-btn:hover {
     background: #28a745;
     color: #fff;
 }
 </style>
-
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -1003,21 +982,31 @@
 <script>
 emailjs.init("KgWUUieylCTTNa0cA");
 
+// ✅ DATE PICKER FIX
 flatpickr("#appointment_date", {
     dateFormat: "d M Y",
-    minDate: "today"
+    minDate: "today",
+    allowInput: true
 });
 
+// ✅ TIME PICKER FIX
 flatpickr("#appointment_time", {
     enableTime: true,
     noCalendar: true,
-    dateFormat: "h:i K"
+    dateFormat: "h:i K",
+    allowInput: true
 });
 
+// 🔥 FORCE PLACEHOLDER BACK
+document.getElementById("appointment_date").setAttribute("placeholder", "Select Date");
+document.getElementById("appointment_time").setAttribute("placeholder", "Select Time");
+
+// Lowercase email
 document.querySelector('input[name="reply_to"]').addEventListener('input', function () {
     this.value = this.value.toLowerCase();
 });
 
+// Submit form
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -1026,17 +1015,13 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 
     emailjs.sendForm("service_uxmfngs", "template_5owa70i", form)
         .then(() => {
-
             successMsg.style.display = "block";
-
             form.reset();
-
             document.getElementById("department").selectedIndex = 0;
 
             setTimeout(() => {
                 successMsg.style.display = "none";
             }, 5000);
-
         })
         .catch(err => console.log(err));
 });
