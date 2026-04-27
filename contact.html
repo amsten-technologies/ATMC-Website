@@ -194,8 +194,7 @@
                 <h2 class="contact-title" style="margin-bottom:25px;">GET IN TOUCH</h2>
             </div>
 
-          
-     <!-- FORM -->
+          <!-- FORM -->
 <div class="col-lg-8 col-md-12 col-12" style="margin-bottom:30px;">
     <form id="contactForm" class="form-contact contact_form" action="contact_process.php" method="post">
 
@@ -236,12 +235,13 @@
 
         </div>
 
-        <!-- BUTTON -->
-        <div class="form-group mt-3" style="display:flex; align-items:center; gap:15px; flex-wrap:wrap;">
+        <!-- BUTTON + MESSAGE -->
+        <div class="form-group mt-3 send-btn-wrap"
+             style="display:flex; align-items:center; gap:15px; flex-wrap:wrap;">
 
             <button type="submit"
                 class="button button-contactForm boxed-btn"
-                style="cursor:pointer;"
+                style="cursor:pointer; padding:10px 22px; font-size:14px;"
                 
                 onclick="
                 event.preventDefault();
@@ -256,26 +256,22 @@
                 var btn = this;
                 var msg = document.getElementById('formMsg');
 
-                // Reset message
                 msg.style.display='none';
                 msg.style.color='red';
 
-                // VALIDATION
                 if(!message.value.trim() || !name.value.trim() || !email.value.trim() || !subject.value.trim()){
                     msg.innerText='Please fill all fields before submitting';
-                    msg.style.display='inline';
+                    msg.style.display='block';
                     return;
                 }
 
-                // EMAIL VALIDATION
                 var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
                 if(!email.value.match(pattern)){
                     msg.innerText='Please enter a valid email address';
-                    msg.style.display='inline';
+                    msg.style.display='block';
                     return;
                 }
 
-                // SUCCESS FLOW
                 btn.innerText='Sending...';
                 btn.disabled=true;
 
@@ -283,9 +279,8 @@
                     btn.innerText='Sent ✓';
                     msg.style.color='green';
                     msg.innerText='Thank you for submitting the form. Our team at ATMC will get back to you shortly.';
-                    msg.style.display='inline';
+                    msg.style.display='block';
 
-                    // RESET AFTER 4 SECONDS
                     setTimeout(function(){
                         btn.innerText='Send';
                         btn.disabled=false;
@@ -306,6 +301,33 @@
 
     </form>
 </div>
+
+<!-- RESPONSIVE FIX -->
+<style>
+@media (max-width: 768px) {
+    .send-btn-wrap {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    #formMsg {
+        width: 100%;
+    }
+}
+</style>
+</div>
+
+<!-- MOBILE FIX -->
+<style>
+@media (max-width: 768px) {
+    .send-btn-wrap {
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+</style>
 
             <!-- CONTACT INFO -->
             <div class="col-lg-3 col-md-12 col-12 offset-lg-1">
