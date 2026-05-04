@@ -344,9 +344,12 @@
         });
     });
 </script>
-    <div class="about-area section-padding2">
+
+<div class="about-area section-padding2">
     <div class="container">
         <div class="row">
+
+            <!-- TEXT -->
             <div class="col-lg-6 col-md-10">
                 <div class="about-caption mb-50">
 
@@ -356,11 +359,8 @@
                     </div>
 
                     <p>
-                        ATMC is the first private hospital of ganderbal district that is founded with a vision to redefine healthcare in the district by delivering world-class medical services with uncompromising quality. 
-                        
+                        ATMC is the first private hospital of Ganderbal district founded with a vision to redefine healthcare by delivering world-class medical services with uncompromising quality.
                     </p>
-
-                    <p>At the core of our approach is a deep commitment to patient care and clinical excellence.</p>
 
                     <p>
                         Equipped with state-of-the-art technology and supported by a team of highly skilled and experienced healthcare professionals, 
@@ -368,34 +368,60 @@
                     </p>
 
                     <p>
-                        From admission to discharge, we ensure seamless and hassle free experience for every patient, 
+                        From admission to discharge, we ensure a seamless and hassle-free experience for every patient, 
                         focusing on safety, efficiency, and overall wellbeing.
                     </p>
 
                 </div>
             </div>
 
+            <!-- IMAGE -->
             <div class="col-lg-6 col-md-12">
                 <div class="about-img">
 
-                    <!-- ✅ ONE IMAGE FOR ALL DEVICES -->
                     <div class="about-font-img">
-                        <img src="assets/img/gallery/about2.png" alt="">
+                        <img src="assets/img/gallery/about2.png" alt="ATMC Hospital">
                     </div>
 
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 
 <style>
-/* ensure image behaves properly */
+
+/* IMAGE DEFAULT (desktop) */
 .about-img img {
     width: 100%;
     height: auto;
     display: block;
 }
+
+
+
+/* 🔥 DESKTOP ENHANCEMENT (optional but recommended) */
+@media (min-width: 769px) {
+    .about-font-img {
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .about-font-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* 🔥 MOBILE: HIDE IMAGE */
+@media (max-width: 768px) {
+    .about-font-img {
+        display: none;
+    }
+}
+
 </style>
     <!-- About  End-->
     <!-- SECTION TITLE -->
@@ -423,6 +449,9 @@
             ATMC DEPARTMENTS
         </span>
 
+        <style>
+            
+        </style>
         <!-- MAIN HEADING -->
         <h2 style="
             font-size:32px;
@@ -435,6 +464,7 @@
 
     </div>
 </div>
+
 
 
 <!-- Moving Departments Row (UNCHANGED) -->
